@@ -255,53 +255,170 @@ def main():
 
         # Filters
         st.markdown("### Optional Filters")
-        f1, f2, f3, f4, f5 = st.columns(5)
+        cyber_categories = ["Malware", "Phishing", "Ransomware", "DDoS"]
+        sports_categories = [
+            "Football",
+            "Basketball",
+            "Tennis",
+            "Athletics",
+            "Gymnastics",
+            "Cycling",
+            "Esports",
+            "Swimming",
+            "Handball",
+            "Volleyball",
+        ]
+        food_categories = ["Vegetable", "Fruit", "Grain", "Protein", "Dairy", "Nut", "Legume"]
 
-        with f1:
-            category_filter = st.selectbox(
-                "Category",
-                ["All"] + sorted(df["category"].dropna().unique().tolist()),
-                index=0,
-            )
-        with f2:
-            actor_filter = st.selectbox(
-                "Actor",
-                ["All"] + sorted(df["actor"].dropna().unique().tolist()),
-                index=0,
-            )
-        with f3:
-            vector_filter = st.selectbox(
-                "Vector",
-                ["All"] + sorted(df["vector"].dropna().unique().tolist()),
-                index=0,
-            )
-        with f4:
-            location_filter = st.selectbox(
-                "Location",
-                ["All"] + sorted(df["location"].dropna().unique().tolist()),
-                index=0,
-            )
-        with f5:
-            severity_filter = st.selectbox(
-                "Severity",
-                ["All"] + sorted(df["severity"].dropna().unique().tolist()),
-                index=0,
-            )
+        topic_group = st.selectbox(
+            "Topic Group",
+            ["All", "Cybersecurity", "Sports", "Food & Nutrition"],
+            index=0,
+        )
 
-        filters = {
-            "category": None if category_filter == "All" else category_filter,
-            "actor": None if actor_filter == "All" else actor_filter,
-            "vector": None if vector_filter == "All" else vector_filter,
-            "location": None if location_filter == "All" else location_filter,
-            "severity": None if severity_filter == "All" else severity_filter,
-        }
+        if topic_group == "All":
+            topic_df = df
+            category_options = ["All"] + sorted(df["category"].dropna().unique().tolist())
+        elif topic_group == "Cybersecurity":
+            topic_df = df[df["category"].isin(cyber_categories)]
+            category_options = ["All"] + cyber_categories
+        elif topic_group == "Sports":
+            topic_df = df[df["category"].isin(sports_categories)]
+            category_options = ["All"] + sports_categories
+        else:  # Food & Nutrition
+            topic_df = df[df["category"].isin(food_categories)]
+            category_options = ["All"] + food_categories
+
+        category_filter = "All"
+        actor_filter = "All"
+        vector_filter = "All"
+        location_filter = "All"
+        severity_filter = "All"
+        team_player_filter = "All"
+        event_type_filter = "All"
+
+        if topic_group == "Cybersecurity":
+            f1, f2, f3, f4, f5 = st.columns(5)
+
+            with f1:
+                category_filter = st.selectbox(
+                    "Category",
+                    category_options,
+                    index=0,
+                )
+            with f2:
+                actor_filter = st.selectbox(
+                    "Actor",
+                    ["All"] + sorted(topic_df["actor"].dropna().unique().tolist()),
+                    index=0,
+                )
+            with f3:
+                vector_filter = st.selectbox(
+                    "Vector",
+                    ["All"] + sorted(topic_df["vector"].dropna().unique().tolist()),
+                    index=0,
+                )
+            with f4:
+                location_filter = st.selectbox(
+                    "Location",
+                    ["All"] + sorted(topic_df["location"].dropna().unique().tolist()),
+                    index=0,
+                )
+            with f5:
+                severity_filter = st.selectbox(
+                    "Severity",
+                    ["All"]
+                    + sorted(topic_df["severity"].dropna().astype(str).unique().tolist()),
+                    index=0,
+                )
+        elif topic_group == "Sports":
+            f1, f2, f3, f4 = st.columns(4)
+
+            with f1:
+                category_filter = st.selectbox("Category", category_options, index=0)
+            with f2:
+                team_player_filter = st.selectbox(
+                    "Team/Player",
+                    ["All"]
+                    + sorted(
+                        topic_df["team_or_player"].dropna().astype(str).unique().tolist()
+                    ),
+                    index=0,
+                )
+            with f3:
+                event_type_filter = st.selectbox(
+                    "Event Type",
+                    ["All"]
+                    + sorted(
+                        topic_df["event_type"].dropna().astype(str).unique().tolist()
+                    ),
+                    index=0,
+                )
+            with f4:
+                location_filter = st.selectbox(
+                    "Location",
+                    ["All"] + sorted(topic_df["location"].dropna().unique().tolist()),
+                    index=0,
+                )
+        else:  # Food & Nutrition
+            f1, f2 = st.columns(2)
+
+            with f1:
+                category_filter = st.selectbox("Category", category_options, index=0)
+            with f2:
+                location_filter = st.selectbox(
+                    "Location",
+                    ["All"] + sorted(topic_df["location"].dropna().unique().tolist()),
+                    index=0,
+                )
+
+        filtered_df = topic_df.copy()
+
+        if category_filter != "All":
+            filtered_df = filtered_df[filtered_df["category"] == category_filter]
+
+        if topic_group == "Cybersecurity":
+            if actor_filter != "All":
+                filtered_df = filtered_df[
+                    filtered_df["actor"].notna() & (filtered_df["actor"] == actor_filter)
+                ]
+            if vector_filter != "All":
+                filtered_df = filtered_df[
+                    filtered_df["vector"].notna()
+                    & (filtered_df["vector"] == vector_filter)
+                ]
+            if severity_filter != "All":
+                filtered_df = filtered_df[
+                    filtered_df["severity"].notna()
+                    & (filtered_df["severity"].astype(str) == severity_filter)
+                ]
+        elif topic_group == "Sports":
+            if team_player_filter != "All":
+                filtered_df = filtered_df[
+                    filtered_df["team_or_player"].notna()
+                    & (filtered_df["team_or_player"].astype(str) == team_player_filter)
+                ]
+            if event_type_filter != "All":
+                filtered_df = filtered_df[
+                    filtered_df["event_type"].notna()
+                    & (filtered_df["event_type"].astype(str) == event_type_filter)
+                ]
+
+        if location_filter != "All":
+            filtered_df = filtered_df[
+                filtered_df["location"].notna() & (filtered_df["location"] == location_filter)
+            ]
+
+        allowed_indices = filtered_df.index
 
         search_btn = st.button("Search")
 
         results = None
 
         if search_btn:
-            if not query.strip():
+            if filtered_df.empty:
+                st.info("No documents match the selected filters.")
+            elif not query.strip():
                 st.warning("Please enter a query.")
             else:
                 try:
@@ -309,15 +426,24 @@ def main():
                     query_clean = se._preprocess_query(query)
                     query_tokens = set(query_clean.split())
 
+                    search_pool = len(df)
+
                     # --- Run selected model ---
                     if model == "TF-IDF (VSM)":
-                        results = se.search_tfidf(query, top_k=top_k, filters=filters)
+                        results = se.search_tfidf(
+                            query, top_k=search_pool, filters=None
+                        )
                     elif model == "BM25":
-                        results = se.search_bm25(query, top_k=top_k, filters=filters)
+                        results = se.search_bm25(query, top_k=search_pool, filters=None)
                     else:
-                        results = se.search_boolean(query, filters=filters)
-                        if len(results) > top_k:
-                            results = results.head(top_k)
+                        results = se.search_boolean(query, filters=None)
+                        if len(results) > search_pool:
+                            results = results.head(search_pool)
+
+                    if results is not None:
+                        results = results[results.index.isin(allowed_indices)]
+                        results = results.head(top_k)
+
 
                     if results is None or results.empty:
                         st.info("No results found for this query with the current filters.")
