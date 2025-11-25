@@ -1,61 +1,121 @@
-text,category,actor,vector,location,severity,clean_text
-phishing email with malicious link,Malware,APT-28,Network,Global,4,malware campaign leveraging advanced obfuscation bypassing modern defenses
-malware detected in email attachment,Malware,Unknown,Web,USA,5,ransomware spreading rapidly through vulnerable exposed network endpoints
-distributed denial of service attack on public website,Malware,Anonymous,Web,Germany,2,phishing operation impersonating executives targeting corporate financial departments
-phishing email with malicious link,Ransomware,Unknown,Email,USA,3,ddos assault overwhelming cloud infrastructure with massive traffic volumes
-ransomware attack through network vulnerability,Malware,Lazarus Group,Email,North Korea,2,malware delivered via poisoned supply chain software update
-phishing email with malicious link,Ransomware,APT-28,Web,USA,4,ransomware encrypting mission critical servers across global networks
-phishing scam targeting corporate accounts,Phishing,APT-28,Web,USA,3,phishing lure exploiting authentication weakness compromising employee credentials
-malware detected in email attachment,Ransomware,Lazarus Group,Email,Russia,5,ddos botnet composed of hijacked iot consumer devices
-phishing email with malicious link,Ransomware,APT-28,Web,Germany,2,malware exploiting zero-day vulnerability in backend systems
-malware detected in email attachment,Ransomware,Lazarus Group,Network,USA,3,ransomware actors escalating privileges inside compromised enterprise network
-distributed denial of service attack on public website,Malware,APT-28,Web,USA,5,phishing emails distributing payloads bypassing email security filters
-phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,USA,2,ddos attack targeting payment gateways causing service disruptions
-ransomware attack through network vulnerability,Malware,Unknown,Email,Russia,5,malware hidden inside encrypted traffic avoiding signature detection
-ransomware attack through network vulnerability,Malware,APT-28,Web,Russia,3,ransomware locking backup resources halting operational continuity
-ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Global,5,phishing message spoofing cloud providers harvesting login credentials
-ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,Germany,1,ddos waves targeting media platforms causing nationwide outages
-malware detected in email attachment,Phishing,Unknown,Network,Russia,5,malware embedded in trojanized installers infiltrating sensitive environments
-phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,4,ransomware actors deploying lateral movement through internal infrastructure
-distributed denial of service attack on public website,Ransomware,APT-28,Email,Germany,2,phishing scams abusing trusted domains tricking corporate users
-distributed denial of service attack on public website,Malware,APT-28,Web,Germany,2,ddos operations coordinated by international threat actor groups
-phishing scam targeting corporate accounts,DDoS,Anonymous,Web,North Korea,2,malware beacons communicating with remote command control servers
-phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Germany,5,ransomware executed via unauthorized remote desktop protocol access
-phishing scam targeting corporate accounts,DDoS,Unknown,Network,USA,5,phishing impersonation exploiting verified accounts deceiving organization staff
-distributed denial of service attack on public website,Phishing,Unknown,Network,USA,2,ddos traffic floods exhausting bandwidth of enterprise networks
-phishing email with malicious link,Phishing,Anonymous,Network,Russia,4,malware harvesting classified data through covert exfiltration channels
-phishing scam targeting corporate accounts,Malware,Lazarus Group,Network,Global,2,ransomware disabling security tools preventing incident containment
-ransomware attack through network vulnerability,DDoS,Anonymous,Email,Germany,2,phishing messages engineered with advanced social engineering tactics
-distributed denial of service attack on public website,Phishing,Lazarus Group,Web,USA,1,ddos amplification attacks abusing vulnerable public-facing services
-malware detected in email attachment,DDoS,Lazarus Group,Network,Global,5,malware propagating across interconnected systems exploiting misconfigurations
-phishing email with malicious link,Ransomware,Lazarus Group,Web,Russia,4,ransomware criminals targeting healthcare facilities during operational peaks
-distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,USA,4,phishing operations weaponizing malicious cloud-hosted login pages
-malware detected in email attachment,Phishing,Lazarus Group,Web,USA,4,ddos attackers routing malicious packets through proxy networks
-phishing email with malicious link,DDoS,Anonymous,Network,North Korea,4,malware strains leveraging polymorphism avoiding antivirus detection engines
-ransomware attack through network vulnerability,Malware,Unknown,Email,Germany,3,ransomware groups deploying custom payloads optimized for environment
-distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Russia,4,phishing emails distributing credential-stealing scripts via attachments
-phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Global,2,ddos campaigns saturating government infrastructure with distributed traffic
-phishing scam targeting corporate accounts,DDoS,Anonymous,Email,USA,3,malware operating stealthily maintaining persistence inside compromised hosts
-ransomware attack through network vulnerability,Ransomware,APT-28,Web,North Korea,2,ransomware infiltrating through misconfigured vpn remote services
-distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,3,phishing attackers exploiting pandemic-themed lures to deceive users
-phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,Russia,2,ddos bursts directed at telecom infrastructure disrupting communication channels
-ransomware attack through network vulnerability,Phishing,Unknown,Web,USA,2,malware infections triggered through malicious document macros execution
-phishing scam targeting corporate accounts,DDoS,APT-28,Web,Global,5,ransomware groups exploiting unpatched systems across multiple regions
-malware detected in email attachment,Phishing,Anonymous,Email,Global,1,phishing activity impersonating trusted suppliers requesting fraudulent payments
-distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,2,ddos campaigns leveraging high-bandwidth reflectors overwhelming datacenters
-distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Germany,3,malware executing reconnaissance tasks mapping internal network topology
-distributed denial of service attack on public website,Phishing,APT-28,Web,Russia,1,ransomware delivered using spear-phishing targeted at executives
-malware detected in email attachment,Malware,Lazarus Group,Web,North Korea,5,phishing waves exploiting mobile platforms targeting remote workers
-phishing email with malicious link,Malware,Anonymous,Email,Global,1,ddos attacks executed through compromised hosting provider infrastructure
-distributed denial of service attack on public website,Malware,Unknown,Web,Global,3,malware variants injecting payloads through browser exploitation techniques
-malware detected in email attachment,DDoS,Anonymous,Network,North Korea,4,ransomware campaigns systematically disabling protective enterprise defenses
-distributed denial of service attack on public website,Phishing,APT-28,Network,North Korea,3,phishing chains exploiting multi-stage redirection bypassing security controls
-phishing email with malicious link,DDoS,Anonymous,Network,Global,4,ddos operations increasing throughput using globally distributed botnets
-malware detected in email attachment,Phishing,Unknown,Web,USA,1,malware infiltrating through unsecured api endpoints exposing systems
-phishing email with malicious link,DDoS,Lazarus Group,Email,Russia,1,ransomware incidents caused by unauthorized privilege escalations attempts
-distributed denial of service attack on public website,Phishing,APT-28,Email,Russia,5,phishing attempts abusing email forwarding rules for persistence
-phishing email with malicious link,Ransomware,APT-28,Email,North Korea,1,ddos storms targeting education platforms disrupting online learning systems
-phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,4,malware actors leveraging advanced evasion to remain undetected
-phishing scam targeting corporate accounts,Phishing,Anonymous,Email,Global,1,ransomware damage amplified by encrypted shared network folders
-ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Global,1,phishing emails prompting password resets causing credential theft
-phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,North Korea,5,ddos forces overwhelming authentication servers causing widespread outages
+text,category,actor,vector,team_or_player,event_type,location,severity,clean_text
+phishing email with malicious link,Malware,APT-28,Network,,,Global,4,malware campaign leveraging advanced obfuscation bypassing modern defenses
+malware detected in email attachment,Malware,Unknown,Web,,,USA,5,ransomware spreading rapidly through vulnerable exposed network endpoints
+distributed denial of service attack on public website,Malware,Anonymous,Web,,,Germany,2,phishing operation impersonating executives targeting corporate financial departments
+phishing email with malicious link,Ransomware,Unknown,Email,,,USA,3,ddos assault overwhelming cloud infrastructure with massive traffic volumes
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,,,North Korea,2,malware delivered via poisoned supply chain software update
+phishing email with malicious link,Ransomware,APT-28,Web,,,USA,4,ransomware encrypting mission critical servers across global networks
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,,,USA,3,phishing lure exploiting authentication weakness compromising employee credentials
+malware detected in email attachment,Ransomware,Lazarus Group,Email,,,Russia,5,ddos botnet composed of hijacked iot consumer devices
+phishing email with malicious link,Ransomware,APT-28,Web,,,Germany,2,malware exploiting zero-day vulnerability in backend systems
+malware detected in email attachment,Ransomware,Lazarus Group,Network,,,USA,3,ransomware actors escalating privileges inside compromised enterprise network
+distributed denial of service attack on public website,Malware,APT-28,Web,,,USA,5,phishing emails distributing payloads bypassing email security filters
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,,,USA,2,ddos attack targeting payment gateways causing service disruptions
+ransomware attack through network vulnerability,Malware,Unknown,Email,,,Russia,5,malware hidden inside encrypted traffic avoiding signature detection
+ransomware attack through network vulnerability,Malware,APT-28,Web,,,Russia,3,ransomware locking backup resources halting operational continuity
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,,,Global,5,phishing message spoofing cloud providers harvesting login credentials
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,,,Germany,1,ddos waves targeting media platforms causing nationwide outages
+malware detected in email attachment,Phishing,Unknown,Network,,,Russia,5,malware embedded in trojanized installers infiltrating sensitive environments
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,,,Russia,4,ransomware actors deploying lateral movement through internal infrastructure
+distributed denial of service attack on public website,Ransomware,APT-28,Email,,,Germany,2,phishing scams abusing trusted domains tricking corporate users
+distributed denial of service attack on public website,Malware,APT-28,Web,,,Germany,2,ddos operations coordinated by international threat actor groups
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,,,North Korea,2,malware beacons communicating with remote command control servers
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,,,Germany,5,ransomware executed via unauthorized remote desktop protocol access
+phishing scam targeting corporate accounts,DDoS,Unknown,Network,,,USA,5,phishing impersonation exploiting verified accounts deceiving organization staff
+distributed denial of service attack on public website,Phishing,Unknown,Network,,,USA,2,ddos traffic floods exhausting bandwidth of enterprise networks
+phishing email with malicious link,Phishing,Anonymous,Network,,,Russia,4,malware harvesting classified data through covert exfiltration channels
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Network,,,Global,2,ransomware disabling security tools preventing incident containment
+ransomware attack through network vulnerability,DDoS,Anonymous,Email,,,Germany,2,phishing messages engineered with advanced social engineering tactics
+distributed denial of service attack on public website,Phishing,Lazarus Group,Web,,,USA,1,ddos amplification attacks abusing vulnerable public-facing services
+malware detected in email attachment,DDoS,Lazarus Group,Network,,,Global,5,malware propagating across interconnected systems exploiting misconfigurations
+phishing email with malicious link,Ransomware,Lazarus Group,Web,,,Russia,4,ransomware criminals targeting healthcare facilities during operational peaks
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,,,USA,4,phishing operations weaponizing malicious cloud-hosted login pages
+malware detected in email attachment,Phishing,Lazarus Group,Web,,,USA,4,ddos attackers routing malicious packets through proxy networks
+phishing email with malicious link,DDoS,Anonymous,Network,,,North Korea,4,malware strains leveraging polymorphism avoiding antivirus detection engines
+ransomware attack through network vulnerability,Malware,Unknown,Email,,,Germany,3,ransomware groups deploying custom payloads optimized for environment
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,,,Russia,4,phishing emails distributing credential-stealing scripts via attachments
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,,,Global,2,ddos campaigns saturating government infrastructure with distributed traffic
+phishing scam targeting corporate accounts,DDoS,Anonymous,Email,,,USA,3,malware operating stealthily maintaining persistence inside compromised hosts
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,,,North Korea,2,ransomware infiltrating through misconfigured vpn remote services
+distributed denial of service attack on public website,Phishing,Unknown,Email,,,North Korea,3,phishing attackers exploiting pandemic-themed lures to deceive users
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,,,Russia,2,ddos bursts directed at telecom infrastructure disrupting communication channels
+ransomware attack through network vulnerability,Phishing,Unknown,Web,,,USA,2,malware infections triggered through malicious document macros execution
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,,,Global,5,ransomware groups exploiting unpatched systems across multiple regions
+malware detected in email attachment,Phishing,Anonymous,Email,,,Global,1,phishing activity impersonating trusted suppliers requesting fraudulent payments
+distributed denial of service attack on public website,Phishing,Unknown,Email,,,North Korea,2,ddos campaigns leveraging high-bandwidth reflectors overwhelming datacenters
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,,,Germany,3,malware executing reconnaissance tasks mapping internal network topology
+distributed denial of service attack on public website,Phishing,APT-28,Web,,,Russia,1,ransomware delivered using spear-phishing targeted at executives
+malware detected in email attachment,Malware,Lazarus Group,Web,,,North Korea,5,phishing waves exploiting mobile platforms targeting remote workers
+phishing email with malicious link,Malware,Anonymous,Email,,,Global,1,ddos attacks executed through compromised hosting provider infrastructure
+distributed denial of service attack on public website,Malware,Unknown,Web,,,Global,3,malware variants injecting payloads through browser exploitation techniques
+malware detected in email attachment,DDoS,Anonymous,Network,,,North Korea,4,ransomware campaigns systematically disabling protective enterprise defenses
+distributed denial of service attack on public website,Phishing,APT-28,Network,,,North Korea,3,phishing chains exploiting multi-stage redirection bypassing security controls
+phishing email with malicious link,DDoS,Anonymous,Network,,,Global,4,ddos operations increasing throughput using globally distributed botnets
+malware detected in email attachment,Phishing,Unknown,Web,,,USA,1,malware infiltrating through unsecured api endpoints exposing systems
+phishing email with malicious link,DDoS,Lazarus Group,Email,,,Russia,1,ransomware incidents caused by unauthorized privilege escalations attempts
+distributed denial of service attack on public website,Phishing,APT-28,Email,,,Russia,5,phishing attempts abusing email forwarding rules for persistence
+phishing email with malicious link,Ransomware,APT-28,Email,,,North Korea,1,ddos storms targeting education platforms disrupting online learning systems
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,,,North Korea,4,malware actors leveraging advanced evasion to remain undetected
+phishing scam targeting corporate accounts,Phishing,Anonymous,Email,,,Global,1,ransomware damage amplified by encrypted shared network folders
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,,,Global,1,phishing emails prompting password resets causing credential theft
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,,,North Korea,5,ddos forces overwhelming authentication servers causing widespread outages
+Last-minute goal gives Barcelona a 2-1 win over Real Madrid,Football,,,FC Barcelona,Match_Result,Spain - La Liga,,barcelona beats real madrid last minute goal la liga spain
+Cristiano Ronaldo scores hat-trick in Saudi Pro League clash,Football,,,Cristiano Ronaldo,Player_Performance,Saudi Arabia - SPL,,cristiano ronaldo hat trick saudi pro league match
+Star striker suffers ACL injury and will miss the rest of the season,Football,,,Unnamed Striker,Injury,Europe,,striker acl injury out for season
+Al Ahly signs young Egyptian winger on a five-year contract,Football,,,Al Ahly SC,Transfer,Egypt - Premier League,,al ahly signs young winger long contract
+Zamalek announces new head coach ahead of CAF Champions League campaign,Football,,,Zamalek SC,Management_Change,Egypt - Cairo,,zamalek new head coach before caf champions league
+Liverpool beats Manchester City 3-0 in dominant home performance,Football,,,Liverpool FC,Match_Result,England - Premier League,,liverpool win 3 0 manchester city dominant
+Golden State Warriors defeat Lakers in overtime thriller,Basketball,,,Golden State Warriors,Match_Result,USA - NBA,,warriors beat lakers overtime thriller nba
+Star point guard records triple-double in season opener,Basketball,,,Star Point Guard,Player_Performance,USA - NBA,,point guard triple double opener nba
+Chicago Bulls trade veteran center to Miami Heat,Basketball,,,Chicago Bulls,Transfer,USA - NBA,,bulls trade veteran center miami heat
+Egypt national handball team qualifies for World Championship quarterfinals,Handball,,,Egypt National Team,Tournament_Progress,World Championship,,egypt handball team reach quarterfinals
+World record broken in men's 100m sprint at Diamond League event,Athletics,,,Unknown Sprinter,Record_Break,Diamond League,,world record broken 100m sprint diamond league
+Marathon runner collapses near finish line but still wins the race,Athletics,,,Marathon Runner,Match_Result,International Marathon,,marathon runner collapses but wins race
+Rafael Nadal announces comeback for next Grand Slam tournament,Tennis,,,Rafael Nadal,Injury_Return,ATP Tour,,rafael nadal comeback next grand slam
+Unseeded player upsets world number one in straight sets,Tennis,,,Unseeded Player,Upset,WTA / ATP,,unseeded player beats world number one upset
+Top seed withdraws from tournament due to shoulder injury,Tennis,,,Top Seed,Injury,International Tournament,,top seed withdraws tournament shoulder injury
+Real Madrid completes record-breaking transfer for teenage midfielder,Football,,,Real Madrid,Transfer,Spain - La Liga,,real madrid record transfer teenage midfielder
+National basketball team secures Olympic qualification with decisive win,Basketball,,,National Team,Tournament_Progress,Olympic Qualifiers,,national basketball team qualify olympics
+Coach fired after team's fifth consecutive defeat,Football,,,Club Management,Management_Change,Europe,,coach fired after five straight defeats
+Star swimmer wins three gold medals at continental championship,Swimming,,,Star Swimmer,Player_Performance,Continental Championship,,swimmer wins three gold medals continental
+Volleyball club claims national league title after dramatic final set,Volleyball,,,Volleyball Club,Match_Result,National League,,volleyball club wins national title final set
+Rival fans clash outside stadium after derby match,Football,,,Supporters,Fan_Incident,Local Derby,,rival fans clash outside stadium derby
+VAR overturns late penalty decision in international match,Football,,,VAR,Refereeing,International Match,,var overturns late penalty decision
+Teenage sprinter sets new national junior record in 200m,Athletics,,,Teenage Sprinter,Record_Break,National Championship,,teen sprinter national junior record 200m
+Tennis doubles pair wins first Grand Slam title together,Tennis,,,Doubles Pair,Match_Result,Grand Slam,,doubles pair win first grand slam title
+Star forward tests positive for COVID-19 and will miss upcoming matches,Football,,,Star Forward,Health_Issue,Club/International,,star forward positive covid 19 misses matches
+National team captain announces retirement from international football,Football,,,National Team Captain,Retirement,International,,national team captain retires international football
+Esports team wins regional League of Legends championship,Esports,,,Esports Team,Match_Result,Regional Championship,,esports team wins regional lol championship
+Cyclist completes mountain stage in record time at Tour event,Cycling,,,Cyclist,Record_Break,Tour Event,,cyclist record time mountain stage tour
+Gymnast earns perfect score on floor routine in world finals,Gymnastics,,,Gymnast,Player_Performance,World Finals,,gymnast perfect score floor routine world finals
+Football academy graduates make professional debuts in top division,Football,,,Youth Academy,Development,Top Division,,academy players make professional debut top division
+Apple,Fruit,,,,,USA,,A crisp sweet and versatile fruit often recommended for its high fiber content and natural sugars.
+Salmon,Protein,,,,,Norway,,A fatty fish rich in heart-healthy Omega-3 acids essential for brain function and reducing inflammation.
+Spinach,Vegetable,,,,,Local Farm,,A leafy green superfood packed with iron Vitamin K and Vitamin A excellent for bone health and vision.
+Brown Rice,Grain,,,,,India,,A whole grain with a nutty flavor providing complex carbohydrates and sustained energy release.
+Chicken Breast,Protein,,,,,Brazil,,A very lean source of high-quality protein widely used in fitness diets for muscle building and repair.
+Broccoli,Vegetable,,,,,Mexico,,A cruciferous vegetable known for its high levels of Vitamin C Vitamin K and powerful antioxidant properties.
+Oatmeal,Grain,,,,,Canada,,A breakfast staple particularly beneficial for lowering bad cholesterol (LDL) due to its soluble fiber content.
+Almonds,Nut,,,,,California,,A nutrient-dense nut providing healthy monounsaturated fats Vitamin E great for snacking.
+Greek Yogurt,Dairy,,,,,Greece,,A strained yogurt that is significantly higher in protein than regular yogurt promoting satiety and gut health.
+Sweet Potato,Vegetable,,,,,Peru,,A vibrant root vegetable loaded with beta-carotene (precursor to Vitamin A) and complex carbohydrates.
+Lentils,Legume,,,,,Turkey,,An inexpensive and highly nutritious source of plant-based protein and dietary fiber excellent for stews and soups.
+Avocado,Fruit,,,,,Mexico,,A unique fruit prized for its healthy fats particularly oleic acid and its creamy texture often used in salads
+Quinoa,Grain,,,,,Andes,,A complete protein source meaning it contains all nine essential amino acids
+Blueberries,Fruit,,,,,USA,,Small potent berries that are among the highest in antioxidants helping to combat free radicals and support cognitive function.
+Tuna,Protein,,,,,Pacific Ocean,,A popular fish whether canned or fresh offering a substantial amount of protein and B vitamins but should be consumed in moderation due to mercury.
+Carrots,Vegetable,,,,,Netherlands,,A crunchy sweet root vegetable famous for its high beta-carotene content which is vital for good eyesight.
+Whole Wheat Bread,Grain,,,,,Germany,,A healthier alternative to white bread retaining the bran and germ which provides more fiber and essential nutrients.
+Walnuts,Nut,,,,,China,,A distinctive nut that resembles a brain known for its high concentration of Omega-3 fatty acids beneficial for brain and heart health.
+Cottage Cheese,Dairy,,,,,Poland,,A fresh cheese curd product that is low in fat and a fantastic source of casein protein which is slow-digesting.
+Asparagus,Vegetable,,,,,France,,A delicate spring vegetable that is a good source of folate and vitamins often lightly steamed or roasted.
+Black Beans,Legume,,,,,Cuba,,A staple in Latin American cuisine providing a rich source of fiber and protein
+Orange,Fruit,,,,,Spain,,A classic citrus fruit renowned for its extremely high Vitamin C content which supports the immune system.
+Shrimp,Protein,,,,,Thailand,,A low-calorie shellfish that is a quick-cooking source of protein and several important minerals like selenium.
+Kale,Vegetable,,,,,Portugal,,A dark leafy green superfood that is incredibly nutrient-dense providing massive amounts of Vitamin K and C.
+Barley,Grain,,,,,Ethiopia,,A versatile cereal grain with a chewy texture commonly used in soups stews and as a side dish rich in fiber.
+Pistachios,Nut,,,,,Iran,,A vibrant green nut that is a good source of protein and fiber often enjoyed as a salty crunchy snack.
+Kefir,Dairy,,,,,Caucasus,,A fermented milk drink similar to a thin yogurt packed with probiotics that are beneficial for a healthy gut microbiome.
+Bell Pepper,Vegetable,,,,,Hungary,,A sweet and crunchy vegetable especially the red variety which contains more Vitamin C than an orange.
+Chickpeas,Legume,,,,,Middle East,,Also known as garbanzo beans they are the main ingredient in hummus and are a great source of protein and fiber.
+Watermelon,Fruit,,,,,Africa,,A highly hydrating fruit composed of about 90% water and a good source of the antioxidant lycopene.
