@@ -1,0 +1,61 @@
+text,category,actor,vector,location,severity,clean_text
+phishing email with malicious link,Malware,APT-28,Network,Global,4,malware campaign leveraging advanced obfuscation bypassing modern defenses
+malware detected in email attachment,Malware,Unknown,Web,USA,5,ransomware spreading rapidly through vulnerable exposed network endpoints
+distributed denial of service attack on public website,Malware,Anonymous,Web,Germany,2,phishing operation impersonating executives targeting corporate financial departments
+phishing email with malicious link,Ransomware,Unknown,Email,USA,3,ddos assault overwhelming cloud infrastructure with massive traffic volumes
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,North Korea,2,malware delivered via poisoned supply chain software update
+phishing email with malicious link,Ransomware,APT-28,Web,USA,4,ransomware encrypting mission critical servers across global networks
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,USA,3,phishing lure exploiting authentication weakness compromising employee credentials
+malware detected in email attachment,Ransomware,Lazarus Group,Email,Russia,5,ddos botnet composed of hijacked iot consumer devices
+phishing email with malicious link,Ransomware,APT-28,Web,Germany,2,malware exploiting zero-day vulnerability in backend systems
+malware detected in email attachment,Ransomware,Lazarus Group,Network,USA,3,ransomware actors escalating privileges inside compromised enterprise network
+distributed denial of service attack on public website,Malware,APT-28,Web,USA,5,phishing emails distributing payloads bypassing email security filters
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,USA,2,ddos attack targeting payment gateways causing service disruptions
+ransomware attack through network vulnerability,Malware,Unknown,Email,Russia,5,malware hidden inside encrypted traffic avoiding signature detection
+ransomware attack through network vulnerability,Malware,APT-28,Web,Russia,3,ransomware locking backup resources halting operational continuity
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Global,5,phishing message spoofing cloud providers harvesting login credentials
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,Germany,1,ddos waves targeting media platforms causing nationwide outages
+malware detected in email attachment,Phishing,Unknown,Network,Russia,5,malware embedded in trojanized installers infiltrating sensitive environments
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,4,ransomware actors deploying lateral movement through internal infrastructure
+distributed denial of service attack on public website,Ransomware,APT-28,Email,Germany,2,phishing scams abusing trusted domains tricking corporate users
+distributed denial of service attack on public website,Malware,APT-28,Web,Germany,2,ddos operations coordinated by international threat actor groups
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,North Korea,2,malware beacons communicating with remote command control servers
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Germany,5,ransomware executed via unauthorized remote desktop protocol access
+phishing scam targeting corporate accounts,DDoS,Unknown,Network,USA,5,phishing impersonation exploiting verified accounts deceiving organization staff
+distributed denial of service attack on public website,Phishing,Unknown,Network,USA,2,ddos traffic floods exhausting bandwidth of enterprise networks
+phishing email with malicious link,Phishing,Anonymous,Network,Russia,4,malware harvesting classified data through covert exfiltration channels
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Network,Global,2,ransomware disabling security tools preventing incident containment
+ransomware attack through network vulnerability,DDoS,Anonymous,Email,Germany,2,phishing messages engineered with advanced social engineering tactics
+distributed denial of service attack on public website,Phishing,Lazarus Group,Web,USA,1,ddos amplification attacks abusing vulnerable public-facing services
+malware detected in email attachment,DDoS,Lazarus Group,Network,Global,5,malware propagating across interconnected systems exploiting misconfigurations
+phishing email with malicious link,Ransomware,Lazarus Group,Web,Russia,4,ransomware criminals targeting healthcare facilities during operational peaks
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,USA,4,phishing operations weaponizing malicious cloud-hosted login pages
+malware detected in email attachment,Phishing,Lazarus Group,Web,USA,4,ddos attackers routing malicious packets through proxy networks
+phishing email with malicious link,DDoS,Anonymous,Network,North Korea,4,malware strains leveraging polymorphism avoiding antivirus detection engines
+ransomware attack through network vulnerability,Malware,Unknown,Email,Germany,3,ransomware groups deploying custom payloads optimized for environment
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Russia,4,phishing emails distributing credential-stealing scripts via attachments
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Global,2,ddos campaigns saturating government infrastructure with distributed traffic
+phishing scam targeting corporate accounts,DDoS,Anonymous,Email,USA,3,malware operating stealthily maintaining persistence inside compromised hosts
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,North Korea,2,ransomware infiltrating through misconfigured vpn remote services
+distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,3,phishing attackers exploiting pandemic-themed lures to deceive users
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,Russia,2,ddos bursts directed at telecom infrastructure disrupting communication channels
+ransomware attack through network vulnerability,Phishing,Unknown,Web,USA,2,malware infections triggered through malicious document macros execution
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,Global,5,ransomware groups exploiting unpatched systems across multiple regions
+malware detected in email attachment,Phishing,Anonymous,Email,Global,1,phishing activity impersonating trusted suppliers requesting fraudulent payments
+distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,2,ddos campaigns leveraging high-bandwidth reflectors overwhelming datacenters
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Germany,3,malware executing reconnaissance tasks mapping internal network topology
+distributed denial of service attack on public website,Phishing,APT-28,Web,Russia,1,ransomware delivered using spear-phishing targeted at executives
+malware detected in email attachment,Malware,Lazarus Group,Web,North Korea,5,phishing waves exploiting mobile platforms targeting remote workers
+phishing email with malicious link,Malware,Anonymous,Email,Global,1,ddos attacks executed through compromised hosting provider infrastructure
+distributed denial of service attack on public website,Malware,Unknown,Web,Global,3,malware variants injecting payloads through browser exploitation techniques
+malware detected in email attachment,DDoS,Anonymous,Network,North Korea,4,ransomware campaigns systematically disabling protective enterprise defenses
+distributed denial of service attack on public website,Phishing,APT-28,Network,North Korea,3,phishing chains exploiting multi-stage redirection bypassing security controls
+phishing email with malicious link,DDoS,Anonymous,Network,Global,4,ddos operations increasing throughput using globally distributed botnets
+malware detected in email attachment,Phishing,Unknown,Web,USA,1,malware infiltrating through unsecured api endpoints exposing systems
+phishing email with malicious link,DDoS,Lazarus Group,Email,Russia,1,ransomware incidents caused by unauthorized privilege escalations attempts
+distributed denial of service attack on public website,Phishing,APT-28,Email,Russia,5,phishing attempts abusing email forwarding rules for persistence
+phishing email with malicious link,Ransomware,APT-28,Email,North Korea,1,ddos storms targeting education platforms disrupting online learning systems
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,4,malware actors leveraging advanced evasion to remain undetected
+phishing scam targeting corporate accounts,Phishing,Anonymous,Email,Global,1,ransomware damage amplified by encrypted shared network folders
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Global,1,phishing emails prompting password resets causing credential theft
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,North Korea,5,ddos forces overwhelming authentication servers causing widespread outages

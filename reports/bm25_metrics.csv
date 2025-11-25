@@ -1,0 +1,6 @@
+query,category,precision@k,recall@k,AP,nDCG
+phishing email malicious link,Phishing,0.2,0.006756756756756757,0.2516654034438901,0.6467985556080422
+corporate ddos network attack,DDoS,0.1,0.003937007874015748,0.18548750789756344,0.5457709567870006
+ransomware network vulnerability,Ransomware,0.3,0.01171875,0.2989926233235129,0.639362728063415
+malware infection through web,Malware,0.2,0.006802721088435374,0.3004798163768968,0.7009040881897718
+data breach global threat,Data Breach,0.0,0.0,0.0,0.0

@@ -1,0 +1,1101 @@
+text,category,actor,vector,location,severity
+ransomware attack through network vulnerability,DDoS,APT-28,Email,North Korea,5
+phishing email with malicious link,Malware,Lazarus Group,Network,USA,1
+ransomware attack through network vulnerability,Phishing,APT-28,Email,North Korea,3
+phishing email with malicious link,DDoS,Lazarus Group,Web,Global,2
+phishing scam targeting corporate accounts,DDoS,Unknown,Email,Germany,1
+ransomware attack through network vulnerability,Malware,APT-28,Web,North Korea,5
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,Germany,1
+distributed denial of service attack on public website,Phishing,Anonymous,Web,North Korea,5
+phishing email with malicious link,DDoS,Anonymous,Network,Global,4
+distributed denial of service attack on public website,Ransomware,APT-28,Web,USA,5
+phishing email with malicious link,DDoS,APT-28,Network,Global,5
+phishing scam targeting corporate accounts,DDoS,Unknown,Network,USA,5
+malware detected in email attachment,DDoS,APT-28,Web,USA,3
+ransomware attack through network vulnerability,DDoS,Unknown,Email,Germany,5
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Global,2
+phishing email with malicious link,Phishing,Anonymous,Email,North Korea,2
+phishing email with malicious link,Malware,Anonymous,Email,Global,1
+phishing email with malicious link,Malware,Lazarus Group,Email,Germany,3
+phishing email with malicious link,Malware,Anonymous,Network,USA,1
+ransomware attack through network vulnerability,DDoS,Anonymous,Email,Germany,2
+distributed denial of service attack on public website,Ransomware,APT-28,Network,Russia,2
+malware detected in email attachment,Phishing,Anonymous,Network,Russia,4
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Network,North Korea,5
+phishing email with malicious link,Malware,APT-28,Web,Germany,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,North Korea,1
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,North Korea,1
+phishing email with malicious link,Ransomware,Lazarus Group,Web,Russia,5
+malware detected in email attachment,Ransomware,APT-28,Email,North Korea,5
+phishing email with malicious link,Malware,Unknown,Email,Russia,4
+malware detected in email attachment,Malware,Lazarus Group,Network,USA,3
+malware detected in email attachment,Phishing,Lazarus Group,Email,Germany,1
+distributed denial of service attack on public website,Phishing,APT-28,Network,North Korea,5
+distributed denial of service attack on public website,Malware,APT-28,Network,Russia,1
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Global,5
+ransomware attack through network vulnerability,Ransomware,Anonymous,Web,North Korea,2
+malware detected in email attachment,Phishing,Lazarus Group,Email,USA,1
+phishing email with malicious link,Malware,APT-28,Email,USA,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,Global,1
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,Russia,3
+phishing email with malicious link,DDoS,Anonymous,Network,North Korea,4
+phishing email with malicious link,DDoS,Lazarus Group,Network,Russia,2
+distributed denial of service attack on public website,DDoS,Unknown,Web,USA,5
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,Russia,3
+malware detected in email attachment,Malware,APT-28,Web,USA,1
+ransomware attack through network vulnerability,Malware,Unknown,Network,Russia,2
+distributed denial of service attack on public website,Malware,Anonymous,Network,Global,1
+phishing scam targeting corporate accounts,Malware,APT-28,Network,Germany,1
+phishing email with malicious link,DDoS,Anonymous,Web,Global,1
+phishing scam targeting corporate accounts,Ransomware,APT-28,Network,Global,4
+malware detected in email attachment,Ransomware,Unknown,Email,Germany,4
+distributed denial of service attack on public website,DDoS,Anonymous,Email,Germany,5
+phishing email with malicious link,Ransomware,Anonymous,Network,North Korea,2
+malware detected in email attachment,DDoS,APT-28,Email,North Korea,3
+ransomware attack through network vulnerability,Malware,Anonymous,Email,Global,3
+distributed denial of service attack on public website,DDoS,APT-28,Web,Global,3
+malware detected in email attachment,Malware,APT-28,Network,USA,1
+malware detected in email attachment,Malware,APT-28,Network,USA,4
+phishing email with malicious link,Phishing,APT-28,Web,North Korea,2
+ransomware attack through network vulnerability,DDoS,Unknown,Email,North Korea,1
+malware detected in email attachment,Phishing,APT-28,Email,USA,4
+distributed denial of service attack on public website,DDoS,Lazarus Group,Network,USA,4
+malware detected in email attachment,DDoS,Anonymous,Email,Russia,2
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,Russia,2
+distributed denial of service attack on public website,Phishing,Unknown,Web,USA,2
+distributed denial of service attack on public website,DDoS,Lazarus Group,Network,Russia,1
+malware detected in email attachment,Ransomware,Anonymous,Web,Germany,5
+phishing email with malicious link,Malware,Lazarus Group,Web,North Korea,2
+distributed denial of service attack on public website,Phishing,Unknown,Network,North Korea,5
+phishing scam targeting corporate accounts,Malware,APT-28,Web,USA,1
+phishing email with malicious link,Ransomware,Lazarus Group,Web,Global,5
+phishing email with malicious link,Ransomware,Unknown,Web,USA,3
+phishing email with malicious link,Ransomware,Unknown,Email,Russia,5
+distributed denial of service attack on public website,Phishing,Anonymous,Network,Global,2
+phishing email with malicious link,Ransomware,Anonymous,Network,Russia,1
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,2
+phishing email with malicious link,Ransomware,APT-28,Email,Russia,3
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Germany,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Network,Germany,2
+phishing scam targeting corporate accounts,DDoS,Unknown,Email,Russia,2
+distributed denial of service attack on public website,Malware,Unknown,Network,Russia,4
+phishing email with malicious link,DDoS,APT-28,Email,Germany,3
+phishing email with malicious link,Malware,APT-28,Web,Global,2
+malware detected in email attachment,Phishing,Lazarus Group,Web,Germany,2
+phishing email with malicious link,Malware,APT-28,Network,North Korea,2
+phishing scam targeting corporate accounts,DDoS,APT-28,Email,Germany,1
+distributed denial of service attack on public website,DDoS,Lazarus Group,Email,Global,4
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,North Korea,1
+phishing email with malicious link,Phishing,Anonymous,Web,USA,4
+ransomware attack through network vulnerability,Malware,Unknown,Email,USA,2
+phishing email with malicious link,Ransomware,Unknown,Email,Global,3
+distributed denial of service attack on public website,Malware,Unknown,Email,Germany,5
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Russia,5
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Global,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Email,North Korea,1
+phishing email with malicious link,Ransomware,Unknown,Network,North Korea,3
+ransomware attack through network vulnerability,Ransomware,Unknown,Email,USA,4
+phishing scam targeting corporate accounts,Ransomware,Unknown,Web,North Korea,2
+distributed denial of service attack on public website,Malware,Anonymous,Network,Global,3
+ransomware attack through network vulnerability,Ransomware,Unknown,Email,North Korea,3
+ransomware attack through network vulnerability,Phishing,Anonymous,Web,Global,4
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Network,Russia,3
+phishing email with malicious link,Ransomware,APT-28,Web,USA,1
+ransomware attack through network vulnerability,Ransomware,Unknown,Email,North Korea,1
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Global,1
+phishing email with malicious link,Ransomware,APT-28,Email,Germany,3
+phishing email with malicious link,Ransomware,Lazarus Group,Email,USA,1
+distributed denial of service attack on public website,Ransomware,APT-28,Network,Russia,4
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,Global,3
+phishing email with malicious link,Ransomware,APT-28,Web,Russia,5
+distributed denial of service attack on public website,DDoS,APT-28,Email,Russia,3
+malware detected in email attachment,Malware,APT-28,Web,North Korea,4
+phishing scam targeting corporate accounts,DDoS,Unknown,Network,North Korea,5
+malware detected in email attachment,Malware,Unknown,Email,Global,3
+phishing email with malicious link,Ransomware,Anonymous,Email,Germany,1
+phishing scam targeting corporate accounts,DDoS,Anonymous,Network,Global,2
+distributed denial of service attack on public website,Malware,Unknown,Network,Germany,2
+phishing email with malicious link,Phishing,Anonymous,Network,Russia,1
+phishing scam targeting corporate accounts,Ransomware,Unknown,Network,USA,2
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Network,Global,2
+malware detected in email attachment,Phishing,APT-28,Email,Global,1
+phishing email with malicious link,Malware,APT-28,Network,Germany,1
+distributed denial of service attack on public website,Phishing,Anonymous,Email,Russia,3
+distributed denial of service attack on public website,Ransomware,Unknown,Email,Russia,3
+phishing email with malicious link,DDoS,Unknown,Network,Germany,1
+phishing email with malicious link,Phishing,Anonymous,Network,Russia,4
+ransomware attack through network vulnerability,Malware,Unknown,Email,North Korea,2
+malware detected in email attachment,Ransomware,Lazarus Group,Network,USA,3
+phishing email with malicious link,Phishing,APT-28,Network,Global,2
+phishing email with malicious link,Malware,Anonymous,Network,USA,5
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Global,1
+ransomware attack through network vulnerability,Malware,Unknown,Email,North Korea,4
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,Russia,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,Germany,5
+malware detected in email attachment,Phishing,Unknown,Web,North Korea,5
+phishing scam targeting corporate accounts,DDoS,Unknown,Network,USA,1
+phishing email with malicious link,Phishing,Unknown,Web,Germany,3
+ransomware attack through network vulnerability,Phishing,Unknown,Network,Russia,1
+distributed denial of service attack on public website,Phishing,Lazarus Group,Web,North Korea,3
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,Germany,5
+distributed denial of service attack on public website,Phishing,Anonymous,Web,North Korea,5
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,North Korea,4
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,Russia,3
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Global,5
+distributed denial of service attack on public website,Malware,Anonymous,Network,Germany,2
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Russia,4
+phishing email with malicious link,DDoS,Lazarus Group,Network,North Korea,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,Russia,4
+phishing email with malicious link,DDoS,APT-28,Web,Global,2
+ransomware attack through network vulnerability,Phishing,APT-28,Email,Germany,3
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Global,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,USA,1
+phishing email with malicious link,DDoS,Unknown,Network,Germany,3
+malware detected in email attachment,Phishing,Anonymous,Web,Global,4
+phishing email with malicious link,DDoS,Unknown,Email,North Korea,5
+phishing email with malicious link,Phishing,APT-28,Email,Germany,4
+malware detected in email attachment,Ransomware,Lazarus Group,Network,Germany,2
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Network,Russia,5
+ransomware attack through network vulnerability,Ransomware,APT-28,Email,North Korea,4
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,USA,3
+distributed denial of service attack on public website,Malware,Lazarus Group,Network,Global,2
+distributed denial of service attack on public website,DDoS,Unknown,Email,Russia,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,Global,2
+distributed denial of service attack on public website,Malware,APT-28,Web,USA,5
+phishing email with malicious link,Malware,Unknown,Email,USA,1
+phishing email with malicious link,Ransomware,Lazarus Group,Network,Germany,5
+malware detected in email attachment,Phishing,Unknown,Web,USA,4
+malware detected in email attachment,Malware,APT-28,Network,Global,1
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,4
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,North Korea,1
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Germany,5
+phishing email with malicious link,Malware,Lazarus Group,Web,Global,2
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,Global,3
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,USA,2
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,Global,5
+phishing email with malicious link,Malware,Lazarus Group,Email,Russia,1
+phishing email with malicious link,Ransomware,Anonymous,Web,USA,2
+phishing email with malicious link,DDoS,APT-28,Web,Russia,5
+distributed denial of service attack on public website,DDoS,APT-28,Network,Germany,4
+phishing scam targeting corporate accounts,Phishing,APT-28,Email,North Korea,3
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,Germany,2
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,North Korea,1
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,Germany,4
+phishing scam targeting corporate accounts,Ransomware,Unknown,Email,Global,5
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,Russia,3
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,North Korea,1
+distributed denial of service attack on public website,Phishing,Anonymous,Network,USA,5
+ransomware attack through network vulnerability,Ransomware,Anonymous,Network,Russia,5
+malware detected in email attachment,DDoS,Lazarus Group,Network,USA,2
+ransomware attack through network vulnerability,DDoS,Anonymous,Network,Russia,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Russia,1
+phishing email with malicious link,DDoS,Lazarus Group,Web,Germany,5
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,North Korea,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,North Korea,3
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,3
+phishing email with malicious link,DDoS,Anonymous,Web,Global,5
+distributed denial of service attack on public website,Ransomware,Anonymous,Network,Global,2
+distributed denial of service attack on public website,Ransomware,Anonymous,Web,USA,1
+malware detected in email attachment,Malware,Lazarus Group,Network,USA,1
+distributed denial of service attack on public website,Phishing,Unknown,Email,Germany,1
+distributed denial of service attack on public website,DDoS,Unknown,Email,Russia,3
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,USA,2
+ransomware attack through network vulnerability,Malware,Anonymous,Email,USA,2
+distributed denial of service attack on public website,DDoS,APT-28,Web,Russia,3
+distributed denial of service attack on public website,Phishing,APT-28,Email,Germany,1
+phishing email with malicious link,Malware,Unknown,Network,USA,1
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,5
+phishing email with malicious link,Malware,Lazarus Group,Network,North Korea,4
+phishing scam targeting corporate accounts,Malware,Unknown,Network,Germany,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Global,2
+malware detected in email attachment,Phishing,APT-28,Email,Global,2
+phishing email with malicious link,DDoS,Anonymous,Web,Germany,4
+distributed denial of service attack on public website,DDoS,Unknown,Network,Global,5
+distributed denial of service attack on public website,Phishing,Anonymous,Web,North Korea,4
+malware detected in email attachment,DDoS,Lazarus Group,Email,Russia,1
+distributed denial of service attack on public website,DDoS,Anonymous,Web,Global,1
+phishing email with malicious link,Phishing,Lazarus Group,Email,Global,2
+phishing email with malicious link,Malware,Lazarus Group,Web,Germany,3
+distributed denial of service attack on public website,Phishing,APT-28,Email,North Korea,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Email,Russia,3
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,Germany,4
+ransomware attack through network vulnerability,DDoS,APT-28,Email,Germany,1
+malware detected in email attachment,DDoS,APT-28,Network,North Korea,3
+phishing email with malicious link,Ransomware,Unknown,Network,Russia,4
+malware detected in email attachment,Malware,Unknown,Network,North Korea,1
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,Russia,3
+phishing email with malicious link,Ransomware,APT-28,Web,North Korea,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Germany,2
+phishing scam targeting corporate accounts,Ransomware,APT-28,Web,Germany,2
+distributed denial of service attack on public website,Phishing,Anonymous,Email,USA,4
+malware detected in email attachment,Phishing,Anonymous,Email,Global,2
+malware detected in email attachment,Ransomware,Anonymous,Web,North Korea,5
+distributed denial of service attack on public website,Malware,Lazarus Group,Email,USA,1
+malware detected in email attachment,Malware,APT-28,Email,Global,4
+distributed denial of service attack on public website,Malware,Anonymous,Network,North Korea,2
+phishing email with malicious link,Malware,Unknown,Network,Russia,1
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,Global,3
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Germany,2
+malware detected in email attachment,Ransomware,Anonymous,Email,USA,1
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Global,5
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Global,3
+distributed denial of service attack on public website,Ransomware,APT-28,Email,Germany,5
+ransomware attack through network vulnerability,DDoS,Unknown,Email,North Korea,1
+ransomware attack through network vulnerability,Malware,APT-28,Network,Russia,5
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,Germany,1
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Network,Russia,1
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,North Korea,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Email,Global,1
+ransomware attack through network vulnerability,Phishing,APT-28,Web,Russia,2
+malware detected in email attachment,Phishing,Anonymous,Network,USA,1
+distributed denial of service attack on public website,DDoS,APT-28,Web,USA,4
+phishing email with malicious link,Ransomware,Unknown,Email,Germany,1
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,North Korea,4
+ransomware attack through network vulnerability,Malware,Lazarus Group,Network,Germany,1
+distributed denial of service attack on public website,Phishing,Unknown,Network,Germany,1
+phishing email with malicious link,Phishing,APT-28,Web,Germany,5
+distributed denial of service attack on public website,DDoS,Anonymous,Network,USA,2
+distributed denial of service attack on public website,DDoS,Anonymous,Network,USA,2
+malware detected in email attachment,Ransomware,Unknown,Email,Germany,3
+malware detected in email attachment,Malware,Anonymous,Network,USA,5
+distributed denial of service attack on public website,DDoS,APT-28,Network,North Korea,5
+phishing email with malicious link,Phishing,APT-28,Email,Germany,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Email,USA,5
+ransomware attack through network vulnerability,Phishing,APT-28,Web,Russia,2
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,Germany,5
+phishing scam targeting corporate accounts,DDoS,Unknown,Email,Germany,1
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,North Korea,2
+distributed denial of service attack on public website,Malware,Unknown,Web,Global,2
+distributed denial of service attack on public website,Malware,Anonymous,Network,Global,4
+malware detected in email attachment,DDoS,APT-28,Network,North Korea,5
+malware detected in email attachment,DDoS,Lazarus Group,Web,North Korea,5
+phishing scam targeting corporate accounts,Ransomware,APT-28,Email,North Korea,2
+ransomware attack through network vulnerability,Malware,Unknown,Web,Global,1
+distributed denial of service attack on public website,Malware,Unknown,Network,North Korea,1
+ransomware attack through network vulnerability,Malware,APT-28,Email,USA,1
+phishing email with malicious link,Phishing,Lazarus Group,Email,Germany,5
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,Germany,4
+phishing email with malicious link,Phishing,Lazarus Group,Network,Russia,2
+malware detected in email attachment,Ransomware,Unknown,Web,Russia,3
+malware detected in email attachment,Phishing,APT-28,Web,Germany,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Web,USA,3
+ransomware attack through network vulnerability,Malware,Unknown,Email,Global,4
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,Global,1
+phishing email with malicious link,Ransomware,APT-28,Network,USA,5
+malware detected in email attachment,DDoS,Lazarus Group,Network,Global,3
+phishing email with malicious link,Ransomware,Anonymous,Web,North Korea,4
+malware detected in email attachment,DDoS,Lazarus Group,Web,Germany,5
+phishing email with malicious link,Phishing,Lazarus Group,Web,Germany,3
+malware detected in email attachment,Phishing,Anonymous,Network,USA,2
+phishing email with malicious link,Phishing,APT-28,Email,Global,4
+malware detected in email attachment,Malware,Unknown,Email,Russia,2
+phishing email with malicious link,Phishing,APT-28,Web,Russia,1
+ransomware attack through network vulnerability,DDoS,Anonymous,Web,Global,2
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,Russia,2
+phishing email with malicious link,Ransomware,APT-28,Web,USA,4
+phishing scam targeting corporate accounts,Ransomware,Unknown,Network,USA,1
+ransomware attack through network vulnerability,Malware,Anonymous,Email,Global,2
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,Russia,5
+malware detected in email attachment,DDoS,Unknown,Network,USA,3
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,USA,2
+distributed denial of service attack on public website,Malware,Unknown,Web,North Korea,1
+malware detected in email attachment,Phishing,Anonymous,Email,North Korea,2
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,USA,3
+phishing email with malicious link,DDoS,APT-28,Email,Global,1
+phishing email with malicious link,Ransomware,Unknown,Email,Germany,4
+ransomware attack through network vulnerability,Ransomware,Anonymous,Email,Germany,1
+distributed denial of service attack on public website,Phishing,Unknown,Network,USA,4
+phishing email with malicious link,Malware,Unknown,Network,USA,1
+phishing scam targeting corporate accounts,Ransomware,APT-28,Email,USA,3
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,Global,3
+phishing email with malicious link,Ransomware,Unknown,Email,North Korea,1
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,USA,2
+phishing scam targeting corporate accounts,DDoS,Anonymous,Email,USA,3
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,Russia,4
+distributed denial of service attack on public website,DDoS,Anonymous,Network,Global,4
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,USA,5
+distributed denial of service attack on public website,Malware,Anonymous,Email,Russia,4
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,Germany,5
+distributed denial of service attack on public website,Phishing,Unknown,Web,USA,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,USA,1
+phishing scam targeting corporate accounts,Ransomware,Unknown,Web,Russia,1
+ransomware attack through network vulnerability,Malware,Unknown,Web,Global,2
+ransomware attack through network vulnerability,Phishing,Unknown,Web,USA,2
+malware detected in email attachment,Malware,APT-28,Network,Germany,5
+phishing email with malicious link,Ransomware,Unknown,Network,USA,4
+malware detected in email attachment,Ransomware,APT-28,Network,Germany,4
+malware detected in email attachment,Ransomware,Lazarus Group,Network,North Korea,1
+distributed denial of service attack on public website,DDoS,Anonymous,Email,North Korea,3
+phishing scam targeting corporate accounts,DDoS,Anonymous,Network,Germany,2
+phishing scam targeting corporate accounts,Malware,Unknown,Web,Global,2
+phishing scam targeting corporate accounts,Malware,APT-28,Web,USA,1
+phishing email with malicious link,Phishing,Anonymous,Network,USA,2
+distributed denial of service attack on public website,Phishing,APT-28,Web,North Korea,1
+distributed denial of service attack on public website,Malware,APT-28,Network,Germany,5
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,USA,4
+malware detected in email attachment,Ransomware,Anonymous,Email,USA,3
+phishing email with malicious link,Malware,Unknown,Email,Global,4
+malware detected in email attachment,Phishing,Unknown,Network,Russia,4
+ransomware attack through network vulnerability,DDoS,Anonymous,Network,North Korea,5
+distributed denial of service attack on public website,Malware,Anonymous,Network,North Korea,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Web,Russia,3
+malware detected in email attachment,DDoS,Lazarus Group,Network,USA,2
+phishing email with malicious link,Malware,APT-28,Email,Global,4
+distributed denial of service attack on public website,DDoS,Anonymous,Web,Global,1
+malware detected in email attachment,Ransomware,Lazarus Group,Network,North Korea,4
+phishing email with malicious link,DDoS,APT-28,Web,Global,2
+malware detected in email attachment,DDoS,APT-28,Web,Russia,4
+phishing email with malicious link,DDoS,APT-28,Network,USA,1
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,Russia,5
+phishing email with malicious link,Malware,Anonymous,Email,Germany,2
+ransomware attack through network vulnerability,DDoS,Unknown,Email,North Korea,4
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Global,2
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,5
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,Global,4
+phishing scam targeting corporate accounts,Malware,Unknown,Email,USA,4
+malware detected in email attachment,Malware,Unknown,Web,USA,2
+malware detected in email attachment,DDoS,Lazarus Group,Web,USA,2
+ransomware attack through network vulnerability,Ransomware,Anonymous,Email,Global,1
+malware detected in email attachment,Malware,Unknown,Web,Germany,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Web,USA,1
+distributed denial of service attack on public website,DDoS,Unknown,Network,Germany,4
+ransomware attack through network vulnerability,Malware,Anonymous,Network,Global,2
+phishing email with malicious link,Phishing,APT-28,Email,Germany,4
+phishing email with malicious link,Phishing,Unknown,Email,Global,4
+distributed denial of service attack on public website,Ransomware,Anonymous,Email,Global,3
+malware detected in email attachment,DDoS,Lazarus Group,Network,North Korea,3
+ransomware attack through network vulnerability,DDoS,Unknown,Email,Global,4
+phishing email with malicious link,Ransomware,Unknown,Email,Global,2
+phishing email with malicious link,Ransomware,Lazarus Group,Email,Russia,4
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,USA,3
+distributed denial of service attack on public website,DDoS,Lazarus Group,Web,North Korea,2
+malware detected in email attachment,Malware,Unknown,Email,North Korea,4
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,North Korea,5
+phishing email with malicious link,Ransomware,Anonymous,Email,Russia,5
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,Global,4
+distributed denial of service attack on public website,Phishing,Unknown,Network,USA,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Network,Germany,4
+ransomware attack through network vulnerability,Malware,APT-28,Email,Global,4
+phishing email with malicious link,Phishing,Lazarus Group,Web,Russia,3
+ransomware attack through network vulnerability,Ransomware,APT-28,Network,Global,5
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,Global,3
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Russia,3
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Network,North Korea,4
+malware detected in email attachment,Malware,Unknown,Network,North Korea,3
+distributed denial of service attack on public website,Phishing,APT-28,Email,USA,5
+distributed denial of service attack on public website,Phishing,Anonymous,Web,USA,3
+phishing scam targeting corporate accounts,Malware,APT-28,Web,North Korea,5
+malware detected in email attachment,DDoS,APT-28,Web,Germany,3
+phishing email with malicious link,DDoS,APT-28,Email,Global,5
+malware detected in email attachment,Phishing,Anonymous,Network,Germany,3
+phishing email with malicious link,Phishing,Lazarus Group,Email,Global,3
+malware detected in email attachment,DDoS,APT-28,Network,North Korea,2
+ransomware attack through network vulnerability,DDoS,APT-28,Web,USA,5
+malware detected in email attachment,Malware,Unknown,Web,USA,5
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,Germany,5
+phishing email with malicious link,DDoS,APT-28,Network,USA,1
+distributed denial of service attack on public website,Malware,Anonymous,Email,North Korea,3
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Germany,5
+phishing email with malicious link,Ransomware,Lazarus Group,Email,Global,1
+phishing email with malicious link,Malware,Lazarus Group,Email,USA,2
+distributed denial of service attack on public website,Phishing,APT-28,Email,Russia,5
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,USA,5
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Global,1
+distributed denial of service attack on public website,DDoS,Lazarus Group,Email,Germany,3
+distributed denial of service attack on public website,Phishing,Unknown,Email,Global,2
+ransomware attack through network vulnerability,Malware,Unknown,Email,Russia,5
+phishing scam targeting corporate accounts,Malware,Unknown,Email,North Korea,3
+distributed denial of service attack on public website,Ransomware,Anonymous,Email,USA,2
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Germany,4
+phishing scam targeting corporate accounts,Malware,Unknown,Email,North Korea,4
+malware detected in email attachment,Ransomware,Anonymous,Network,Global,2
+phishing email with malicious link,DDoS,Lazarus Group,Email,Germany,1
+ransomware attack through network vulnerability,Malware,APT-28,Email,North Korea,2
+phishing email with malicious link,Ransomware,APT-28,Web,Germany,2
+malware detected in email attachment,Phishing,APT-28,Web,Russia,1
+distributed denial of service attack on public website,DDoS,Unknown,Network,Russia,1
+distributed denial of service attack on public website,Phishing,Anonymous,Network,USA,3
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,USA,3
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Russia,1
+ransomware attack through network vulnerability,Malware,Unknown,Email,Germany,4
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,Russia,4
+phishing email with malicious link,Ransomware,Lazarus Group,Network,USA,2
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Russia,5
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Network,Russia,2
+ransomware attack through network vulnerability,DDoS,Anonymous,Email,Germany,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,North Korea,5
+phishing scam targeting corporate accounts,Phishing,APT-28,Network,USA,1
+malware detected in email attachment,Phishing,Unknown,Email,Germany,4
+phishing email with malicious link,Malware,Anonymous,Email,Russia,2
+malware detected in email attachment,Phishing,Lazarus Group,Web,Russia,5
+malware detected in email attachment,Malware,Anonymous,Web,North Korea,3
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,USA,2
+ransomware attack through network vulnerability,Ransomware,APT-28,Network,USA,4
+ransomware attack through network vulnerability,Phishing,Unknown,Email,Global,1
+malware detected in email attachment,Malware,Lazarus Group,Web,USA,2
+phishing email with malicious link,Malware,Lazarus Group,Network,North Korea,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Network,Global,5
+distributed denial of service attack on public website,Malware,Lazarus Group,Network,Global,3
+phishing email with malicious link,Malware,Unknown,Web,Russia,3
+distributed denial of service attack on public website,DDoS,Unknown,Web,Russia,1
+phishing email with malicious link,DDoS,APT-28,Email,USA,4
+ransomware attack through network vulnerability,Phishing,Unknown,Email,Global,1
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,Russia,2
+ransomware attack through network vulnerability,Phishing,APT-28,Network,North Korea,2
+malware detected in email attachment,Malware,APT-28,Network,Russia,3
+malware detected in email attachment,Malware,APT-28,Network,Russia,4
+phishing email with malicious link,DDoS,Lazarus Group,Email,Global,5
+malware detected in email attachment,DDoS,Anonymous,Network,Global,4
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Germany,2
+distributed denial of service attack on public website,DDoS,Unknown,Email,North Korea,5
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Global,4
+phishing email with malicious link,Ransomware,Lazarus Group,Network,USA,4
+malware detected in email attachment,Ransomware,Lazarus Group,Web,North Korea,5
+distributed denial of service attack on public website,Ransomware,APT-28,Web,North Korea,2
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Global,4
+distributed denial of service attack on public website,Phishing,APT-28,Email,North Korea,5
+distributed denial of service attack on public website,DDoS,Unknown,Email,Global,2
+ransomware attack through network vulnerability,Ransomware,APT-28,Email,Russia,5
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Email,Germany,5
+phishing email with malicious link,DDoS,Unknown,Email,Russia,4
+phishing email with malicious link,DDoS,Anonymous,Web,Global,2
+distributed denial of service attack on public website,Ransomware,APT-28,Network,Global,4
+distributed denial of service attack on public website,Phishing,Unknown,Web,Russia,1
+malware detected in email attachment,Ransomware,APT-28,Email,USA,1
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,USA,2
+distributed denial of service attack on public website,Malware,Unknown,Email,USA,5
+malware detected in email attachment,DDoS,APT-28,Email,Global,4
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,North Korea,4
+phishing email with malicious link,Phishing,Unknown,Email,Global,2
+malware detected in email attachment,Phishing,Unknown,Network,North Korea,2
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Russia,1
+malware detected in email attachment,Phishing,Anonymous,Network,Germany,3
+distributed denial of service attack on public website,Malware,Anonymous,Web,North Korea,2
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,USA,3
+phishing email with malicious link,Malware,APT-28,Network,Global,2
+distributed denial of service attack on public website,DDoS,Anonymous,Web,Russia,5
+distributed denial of service attack on public website,Malware,APT-28,Email,USA,5
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,Russia,1
+malware detected in email attachment,Malware,APT-28,Email,Germany,1
+phishing email with malicious link,Phishing,Anonymous,Network,Global,3
+distributed denial of service attack on public website,Malware,APT-28,Network,Global,2
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,Germany,4
+phishing email with malicious link,Ransomware,APT-28,Network,Global,1
+malware detected in email attachment,Phishing,Anonymous,Network,North Korea,4
+distributed denial of service attack on public website,Ransomware,Anonymous,Email,Russia,4
+distributed denial of service attack on public website,Phishing,APT-28,Email,USA,2
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Germany,3
+phishing email with malicious link,DDoS,Unknown,Email,North Korea,2
+phishing email with malicious link,Malware,Lazarus Group,Email,USA,1
+phishing email with malicious link,Phishing,APT-28,Email,USA,4
+phishing email with malicious link,Phishing,Lazarus Group,Email,Germany,2
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,North Korea,2
+ransomware attack through network vulnerability,Phishing,Unknown,Web,USA,2
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,USA,1
+distributed denial of service attack on public website,Ransomware,APT-28,Web,North Korea,3
+phishing scam targeting corporate accounts,Phishing,APT-28,Email,Global,2
+malware detected in email attachment,DDoS,Unknown,Web,USA,1
+phishing email with malicious link,DDoS,Anonymous,Email,Russia,4
+malware detected in email attachment,Malware,APT-28,Web,North Korea,5
+malware detected in email attachment,Phishing,Lazarus Group,Network,USA,1
+distributed denial of service attack on public website,Malware,APT-28,Web,Germany,5
+phishing email with malicious link,DDoS,APT-28,Web,Russia,2
+malware detected in email attachment,Phishing,APT-28,Email,USA,2
+distributed denial of service attack on public website,Phishing,APT-28,Web,Russia,1
+phishing email with malicious link,Malware,Anonymous,Network,Russia,5
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,Global,2
+distributed denial of service attack on public website,Phishing,Anonymous,Email,Russia,4
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,Global,3
+phishing email with malicious link,DDoS,APT-28,Email,North Korea,3
+malware detected in email attachment,Malware,Unknown,Email,Global,2
+malware detected in email attachment,Ransomware,Anonymous,Email,Germany,5
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,USA,2
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,North Korea,5
+malware detected in email attachment,DDoS,APT-28,Email,North Korea,4
+phishing email with malicious link,Ransomware,Anonymous,Network,Germany,5
+distributed denial of service attack on public website,Ransomware,APT-28,Web,Global,2
+phishing scam targeting corporate accounts,DDoS,Anonymous,Network,USA,4
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Global,1
+phishing scam targeting corporate accounts,Ransomware,APT-28,Email,Russia,3
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,Global,2
+phishing email with malicious link,Ransomware,APT-28,Network,North Korea,2
+phishing email with malicious link,Malware,Lazarus Group,Web,USA,2
+phishing email with malicious link,DDoS,APT-28,Network,Global,4
+phishing email with malicious link,Ransomware,Unknown,Email,USA,1
+phishing email with malicious link,DDoS,APT-28,Web,USA,5
+malware detected in email attachment,Ransomware,Unknown,Web,Russia,1
+phishing scam targeting corporate accounts,DDoS,Unknown,Email,Russia,4
+malware detected in email attachment,DDoS,APT-28,Web,North Korea,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Germany,3
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Network,USA,2
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Germany,5
+ransomware attack through network vulnerability,Phishing,APT-28,Network,North Korea,3
+malware detected in email attachment,Malware,Unknown,Email,USA,2
+distributed denial of service attack on public website,Phishing,APT-28,Web,USA,3
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,Germany,1
+distributed denial of service attack on public website,DDoS,APT-28,Email,Global,4
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,Russia,2
+malware detected in email attachment,Malware,Unknown,Web,Global,5
+distributed denial of service attack on public website,DDoS,Lazarus Group,Email,Germany,1
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,Russia,2
+malware detected in email attachment,Ransomware,Anonymous,Network,Global,1
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,Russia,5
+malware detected in email attachment,Ransomware,APT-28,Web,USA,2
+malware detected in email attachment,DDoS,Unknown,Email,Global,5
+phishing scam targeting corporate accounts,Ransomware,Unknown,Web,Russia,3
+malware detected in email attachment,Phishing,Unknown,Network,Russia,5
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Russia,3
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,Global,2
+phishing scam targeting corporate accounts,Malware,Unknown,Email,North Korea,3
+ransomware attack through network vulnerability,Ransomware,APT-28,Network,Global,2
+distributed denial of service attack on public website,DDoS,Lazarus Group,Network,Germany,2
+ransomware attack through network vulnerability,Phishing,Unknown,Web,Global,4
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,Russia,2
+distributed denial of service attack on public website,Phishing,Lazarus Group,Email,USA,3
+distributed denial of service attack on public website,Malware,Unknown,Network,Global,4
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,Global,4
+distributed denial of service attack on public website,Malware,Lazarus Group,Network,Russia,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Web,USA,5
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Network,USA,5
+distributed denial of service attack on public website,Malware,Lazarus Group,Email,Germany,4
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Email,Global,2
+phishing email with malicious link,Malware,Unknown,Web,USA,5
+phishing email with malicious link,DDoS,Anonymous,Web,USA,2
+phishing email with malicious link,DDoS,APT-28,Network,North Korea,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,4
+phishing email with malicious link,Malware,APT-28,Email,USA,4
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Germany,1
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Email,USA,5
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,Russia,5
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,Global,5
+distributed denial of service attack on public website,DDoS,Lazarus Group,Network,Germany,3
+distributed denial of service attack on public website,Ransomware,Unknown,Network,Russia,2
+distributed denial of service attack on public website,DDoS,Anonymous,Email,Germany,4
+malware detected in email attachment,Phishing,APT-28,Email,Russia,5
+ransomware attack through network vulnerability,Ransomware,APT-28,Network,Global,1
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Global,5
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Web,North Korea,2
+distributed denial of service attack on public website,Phishing,Anonymous,Email,Russia,2
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Web,North Korea,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Russia,3
+phishing email with malicious link,Ransomware,Unknown,Web,North Korea,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Global,5
+malware detected in email attachment,Phishing,APT-28,Email,Germany,1
+distributed denial of service attack on public website,Malware,APT-28,Email,North Korea,4
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Russia,3
+ransomware attack through network vulnerability,Ransomware,APT-28,Email,Russia,4
+phishing email with malicious link,DDoS,APT-28,Web,Global,2
+ransomware attack through network vulnerability,Ransomware,Anonymous,Web,Russia,5
+ransomware attack through network vulnerability,DDoS,APT-28,Email,USA,5
+distributed denial of service attack on public website,Malware,Unknown,Web,Germany,5
+distributed denial of service attack on public website,Phishing,Anonymous,Email,North Korea,5
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,5
+phishing email with malicious link,Malware,Anonymous,Email,Global,5
+ransomware attack through network vulnerability,Phishing,Unknown,Network,North Korea,1
+malware detected in email attachment,Malware,Anonymous,Web,North Korea,3
+phishing email with malicious link,Malware,Anonymous,Network,USA,5
+ransomware attack through network vulnerability,Malware,Unknown,Web,Global,3
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,Russia,5
+distributed denial of service attack on public website,DDoS,Unknown,Web,USA,4
+phishing scam targeting corporate accounts,Malware,Unknown,Email,USA,5
+phishing email with malicious link,Ransomware,Lazarus Group,Email,Germany,2
+ransomware attack through network vulnerability,Phishing,APT-28,Network,Germany,1
+phishing email with malicious link,Malware,APT-28,Network,Germany,4
+malware detected in email attachment,Malware,Anonymous,Network,USA,4
+malware detected in email attachment,Ransomware,Anonymous,Network,Russia,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,5
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Germany,1
+distributed denial of service attack on public website,DDoS,Lazarus Group,Web,Russia,4
+ransomware attack through network vulnerability,Malware,Unknown,Email,Global,1
+phishing email with malicious link,Malware,Lazarus Group,Web,Germany,4
+malware detected in email attachment,Malware,Lazarus Group,Web,North Korea,5
+phishing email with malicious link,Phishing,Anonymous,Web,Global,4
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Global,4
+malware detected in email attachment,Malware,Unknown,Web,North Korea,3
+distributed denial of service attack on public website,Ransomware,Unknown,Email,Germany,5
+malware detected in email attachment,Ransomware,Anonymous,Network,USA,2
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,North Korea,2
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,North Korea,5
+malware detected in email attachment,Malware,Unknown,Network,North Korea,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Email,Global,5
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Russia,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,USA,3
+distributed denial of service attack on public website,Ransomware,APT-28,Email,Germany,2
+malware detected in email attachment,DDoS,Anonymous,Email,Germany,4
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,Russia,5
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,North Korea,1
+phishing email with malicious link,Ransomware,Unknown,Email,USA,1
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,5
+distributed denial of service attack on public website,Ransomware,Anonymous,Network,Germany,3
+ransomware attack through network vulnerability,DDoS,APT-28,Web,North Korea,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,3
+malware detected in email attachment,Phishing,Unknown,Web,USA,1
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,Russia,5
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,Russia,5
+distributed denial of service attack on public website,Phishing,Anonymous,Network,USA,3
+malware detected in email attachment,Ransomware,Lazarus Group,Web,USA,3
+ransomware attack through network vulnerability,Ransomware,APT-28,Email,Germany,2
+distributed denial of service attack on public website,Phishing,APT-28,Email,Germany,4
+ransomware attack through network vulnerability,DDoS,Anonymous,Network,USA,4
+phishing email with malicious link,Ransomware,Unknown,Email,Global,2
+phishing scam targeting corporate accounts,Malware,Unknown,Network,Germany,4
+phishing email with malicious link,Ransomware,APT-28,Network,Global,1
+phishing scam targeting corporate accounts,Ransomware,Unknown,Email,USA,4
+distributed denial of service attack on public website,Malware,APT-28,Web,Germany,2
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,Russia,4
+ransomware attack through network vulnerability,Malware,APT-28,Email,USA,5
+distributed denial of service attack on public website,Phishing,APT-28,Network,North Korea,3
+malware detected in email attachment,Phishing,Anonymous,Email,Global,1
+phishing email with malicious link,Phishing,Unknown,Network,USA,5
+phishing email with malicious link,Malware,APT-28,Web,USA,5
+ransomware attack through network vulnerability,Phishing,APT-28,Web,Germany,2
+ransomware attack through network vulnerability,DDoS,Anonymous,Web,Germany,3
+ransomware attack through network vulnerability,Malware,Unknown,Email,Germany,3
+distributed denial of service attack on public website,DDoS,APT-28,Network,North Korea,1
+malware detected in email attachment,Phishing,Anonymous,Web,Germany,2
+phishing email with malicious link,Ransomware,APT-28,Network,USA,1
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,Germany,4
+distributed denial of service attack on public website,DDoS,Anonymous,Web,Russia,5
+phishing email with malicious link,DDoS,Unknown,Web,Germany,1
+malware detected in email attachment,Malware,Unknown,Network,North Korea,5
+distributed denial of service attack on public website,Ransomware,Unknown,Web,Russia,2
+phishing email with malicious link,Malware,Unknown,Network,USA,4
+distributed denial of service attack on public website,DDoS,APT-28,Network,USA,2
+phishing email with malicious link,Phishing,APT-28,Web,Global,4
+phishing email with malicious link,Ransomware,Unknown,Email,Russia,4
+malware detected in email attachment,Phishing,Unknown,Web,Global,5
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,Russia,2
+malware detected in email attachment,Ransomware,APT-28,Network,Russia,2
+phishing email with malicious link,Malware,Unknown,Network,North Korea,1
+distributed denial of service attack on public website,Phishing,Unknown,Email,Global,2
+malware detected in email attachment,DDoS,Lazarus Group,Network,North Korea,1
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,Russia,3
+phishing email with malicious link,Ransomware,Unknown,Email,USA,3
+malware detected in email attachment,Ransomware,Anonymous,Network,Russia,3
+malware detected in email attachment,Ransomware,Unknown,Email,North Korea,2
+malware detected in email attachment,Malware,Lazarus Group,Web,Global,2
+malware detected in email attachment,Phishing,Anonymous,Web,Global,1
+distributed denial of service attack on public website,Malware,Anonymous,Network,North Korea,4
+phishing scam targeting corporate accounts,Malware,Unknown,Network,Global,1
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Email,Germany,3
+phishing email with malicious link,Ransomware,Lazarus Group,Email,USA,1
+ransomware attack through network vulnerability,Malware,Anonymous,Email,USA,4
+distributed denial of service attack on public website,Phishing,Unknown,Email,USA,2
+phishing email with malicious link,DDoS,APT-28,Web,Global,1
+phishing email with malicious link,Malware,APT-28,Web,Global,3
+malware detected in email attachment,Phishing,Lazarus Group,Network,Russia,3
+ransomware attack through network vulnerability,Ransomware,APT-28,Email,Russia,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,USA,1
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,Germany,4
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,Russia,2
+phishing email with malicious link,Ransomware,APT-28,Email,Russia,1
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Global,5
+ransomware attack through network vulnerability,Ransomware,Anonymous,Email,Germany,3
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,USA,4
+phishing email with malicious link,Malware,Unknown,Network,Russia,4
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Germany,4
+ransomware attack through network vulnerability,Malware,Unknown,Network,Germany,3
+malware detected in email attachment,DDoS,APT-28,Email,USA,1
+ransomware attack through network vulnerability,Ransomware,APT-28,Web,Germany,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Web,Germany,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,Germany,2
+phishing email with malicious link,Ransomware,Unknown,Web,Russia,4
+distributed denial of service attack on public website,Malware,Unknown,Network,USA,1
+phishing email with malicious link,Phishing,Unknown,Network,Germany,4
+malware detected in email attachment,Malware,Lazarus Group,Email,Germany,5
+phishing email with malicious link,Phishing,Unknown,Web,Russia,4
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,USA,4
+malware detected in email attachment,Malware,Unknown,Email,Global,2
+phishing email with malicious link,Malware,Unknown,Email,Russia,5
+malware detected in email attachment,Malware,Unknown,Network,USA,4
+distributed denial of service attack on public website,Malware,APT-28,Web,Germany,4
+phishing email with malicious link,DDoS,Lazarus Group,Email,USA,5
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,USA,5
+malware detected in email attachment,Phishing,Unknown,Web,USA,1
+phishing scam targeting corporate accounts,Malware,Unknown,Web,Global,2
+malware detected in email attachment,Malware,APT-28,Email,USA,5
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Global,5
+ransomware attack through network vulnerability,DDoS,APT-28,Email,Germany,3
+distributed denial of service attack on public website,Malware,Lazarus Group,Web,Global,5
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Email,Germany,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Web,Germany,4
+malware detected in email attachment,Ransomware,Unknown,Network,Global,4
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Russia,4
+phishing scam targeting corporate accounts,Malware,Anonymous,Web,North Korea,4
+malware detected in email attachment,Phishing,Anonymous,Email,USA,3
+phishing email with malicious link,Phishing,APT-28,Email,North Korea,5
+malware detected in email attachment,Phishing,Lazarus Group,Web,USA,4
+distributed denial of service attack on public website,DDoS,Anonymous,Network,USA,1
+ransomware attack through network vulnerability,DDoS,APT-28,Network,Germany,4
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Email,USA,5
+malware detected in email attachment,Malware,Unknown,Network,USA,4
+phishing email with malicious link,DDoS,Anonymous,Web,Global,3
+distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,2
+malware detected in email attachment,Phishing,Lazarus Group,Web,Global,2
+malware detected in email attachment,Malware,Anonymous,Email,USA,5
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Germany,2
+distributed denial of service attack on public website,DDoS,Unknown,Email,Global,2
+phishing email with malicious link,Malware,Anonymous,Email,Global,1
+ransomware attack through network vulnerability,Phishing,Unknown,Network,Russia,5
+malware detected in email attachment,Phishing,Lazarus Group,Web,USA,5
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,Germany,2
+ransomware attack through network vulnerability,DDoS,Unknown,Web,Global,2
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Global,2
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Germany,3
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,USA,4
+distributed denial of service attack on public website,DDoS,Unknown,Network,Russia,3
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Global,5
+phishing email with malicious link,DDoS,Unknown,Web,Russia,1
+malware detected in email attachment,DDoS,Anonymous,Network,North Korea,4
+distributed denial of service attack on public website,Phishing,Anonymous,Email,USA,1
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,North Korea,5
+phishing email with malicious link,Malware,Unknown,Web,North Korea,5
+malware detected in email attachment,Phishing,Anonymous,Web,North Korea,1
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,USA,1
+phishing email with malicious link,Ransomware,Anonymous,Email,USA,1
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Email,Germany,5
+phishing scam targeting corporate accounts,Ransomware,Unknown,Network,Russia,2
+phishing scam targeting corporate accounts,Ransomware,Unknown,Network,Russia,1
+distributed denial of service attack on public website,DDoS,Lazarus Group,Network,Germany,4
+phishing email with malicious link,Phishing,Unknown,Email,Germany,5
+malware detected in email attachment,DDoS,Lazarus Group,Web,North Korea,3
+phishing email with malicious link,Malware,APT-28,Web,Germany,3
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Global,4
+distributed denial of service attack on public website,Phishing,APT-28,Network,Russia,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Germany,1
+phishing email with malicious link,Phishing,Anonymous,Web,Global,5
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Network,Global,1
+malware detected in email attachment,Phishing,Anonymous,Network,Global,5
+distributed denial of service attack on public website,Malware,Anonymous,Web,Global,3
+ransomware attack through network vulnerability,Malware,Anonymous,Email,North Korea,1
+phishing email with malicious link,Phishing,Anonymous,Network,Global,4
+malware detected in email attachment,Phishing,Lazarus Group,Web,North Korea,2
+ransomware attack through network vulnerability,Phishing,Anonymous,Web,North Korea,4
+phishing scam targeting corporate accounts,Phishing,Anonymous,Web,Global,2
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Russia,1
+malware detected in email attachment,Ransomware,Unknown,Email,Global,1
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Global,2
+distributed denial of service attack on public website,Phishing,APT-28,Network,Global,3
+malware detected in email attachment,Malware,APT-28,Email,Russia,5
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Web,USA,4
+phishing email with malicious link,DDoS,Lazarus Group,Email,USA,4
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,North Korea,4
+distributed denial of service attack on public website,DDoS,APT-28,Web,North Korea,1
+ransomware attack through network vulnerability,Malware,APT-28,Network,Russia,4
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Germany,5
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,USA,5
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,North Korea,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,USA,1
+distributed denial of service attack on public website,Malware,Unknown,Web,Russia,5
+ransomware attack through network vulnerability,Malware,Anonymous,Email,Russia,3
+phishing email with malicious link,DDoS,Lazarus Group,Web,Germany,1
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,Germany,1
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,Russia,5
+distributed denial of service attack on public website,Phishing,Unknown,Email,North Korea,3
+distributed denial of service attack on public website,Malware,Unknown,Email,USA,2
+phishing email with malicious link,Phishing,APT-28,Email,Global,5
+distributed denial of service attack on public website,DDoS,Anonymous,Email,Germany,3
+distributed denial of service attack on public website,Phishing,APT-28,Email,Global,1
+ransomware attack through network vulnerability,DDoS,Anonymous,Web,North Korea,3
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Germany,1
+malware detected in email attachment,DDoS,Lazarus Group,Network,Global,5
+distributed denial of service attack on public website,Phishing,APT-28,Web,North Korea,5
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,USA,4
+malware detected in email attachment,Phishing,APT-28,Email,North Korea,4
+distributed denial of service attack on public website,Phishing,Unknown,Email,Germany,4
+ransomware attack through network vulnerability,Ransomware,Unknown,Web,Russia,5
+ransomware attack through network vulnerability,Malware,Unknown,Network,USA,2
+malware detected in email attachment,Malware,APT-28,Email,Global,5
+distributed denial of service attack on public website,Phishing,Anonymous,Web,Germany,3
+distributed denial of service attack on public website,Ransomware,APT-28,Web,Russia,5
+phishing scam targeting corporate accounts,Phishing,Anonymous,Network,North Korea,5
+distributed denial of service attack on public website,DDoS,APT-28,Network,Russia,1
+ransomware attack through network vulnerability,DDoS,APT-28,Email,Germany,1
+phishing email with malicious link,Phishing,Unknown,Network,Germany,1
+phishing email with malicious link,Malware,Lazarus Group,Web,Russia,5
+phishing email with malicious link,Malware,Lazarus Group,Web,North Korea,2
+phishing email with malicious link,Phishing,Anonymous,Network,Russia,3
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,Germany,3
+distributed denial of service attack on public website,DDoS,APT-28,Network,Germany,2
+phishing scam targeting corporate accounts,Malware,APT-28,Network,Global,2
+distributed denial of service attack on public website,Phishing,Unknown,Email,Global,3
+phishing email with malicious link,DDoS,Unknown,Network,USA,4
+malware detected in email attachment,Malware,Lazarus Group,Email,Germany,1
+malware detected in email attachment,Ransomware,Anonymous,Web,Global,1
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Network,Russia,3
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,North Korea,2
+distributed denial of service attack on public website,Malware,Lazarus Group,Network,Russia,4
+malware detected in email attachment,DDoS,Lazarus Group,Web,North Korea,3
+phishing email with malicious link,Ransomware,APT-28,Web,Global,1
+phishing email with malicious link,DDoS,Anonymous,Web,USA,5
+phishing email with malicious link,Malware,APT-28,Network,Russia,2
+distributed denial of service attack on public website,Phishing,Anonymous,Network,Russia,5
+distributed denial of service attack on public website,Phishing,Unknown,Email,Russia,3
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,North Korea,1
+phishing email with malicious link,Malware,APT-28,Network,Global,4
+phishing email with malicious link,Phishing,Anonymous,Web,Russia,5
+distributed denial of service attack on public website,Malware,Unknown,Web,Russia,4
+distributed denial of service attack on public website,DDoS,Unknown,Email,USA,1
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,USA,5
+phishing scam targeting corporate accounts,Malware,Anonymous,Email,Global,4
+ransomware attack through network vulnerability,Phishing,APT-28,Email,Global,4
+malware detected in email attachment,DDoS,Lazarus Group,Web,Germany,5
+phishing email with malicious link,Malware,APT-28,Email,USA,1
+phishing email with malicious link,Phishing,Unknown,Email,Germany,4
+phishing scam targeting corporate accounts,DDoS,APT-28,Email,North Korea,3
+phishing scam targeting corporate accounts,Phishing,APT-28,Email,Germany,5
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,Russia,2
+malware detected in email attachment,Ransomware,APT-28,Email,Germany,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Global,1
+malware detected in email attachment,DDoS,Unknown,Network,North Korea,3
+phishing email with malicious link,Ransomware,Lazarus Group,Web,Russia,4
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Germany,2
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,North Korea,1
+ransomware attack through network vulnerability,Phishing,APT-28,Network,North Korea,3
+ransomware attack through network vulnerability,DDoS,Unknown,Network,Russia,3
+phishing email with malicious link,DDoS,Lazarus Group,Network,Germany,1
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,North Korea,1
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,North Korea,4
+distributed denial of service attack on public website,DDoS,APT-28,Network,USA,1
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,North Korea,4
+distributed denial of service attack on public website,DDoS,APT-28,Web,USA,4
+phishing email with malicious link,Malware,Anonymous,Web,Germany,5
+ransomware attack through network vulnerability,Phishing,Anonymous,Network,Germany,3
+phishing scam targeting corporate accounts,Ransomware,Unknown,Email,Germany,3
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Email,Global,3
+ransomware attack through network vulnerability,Malware,Unknown,Network,Germany,5
+phishing scam targeting corporate accounts,Phishing,Anonymous,Email,North Korea,4
+ransomware attack through network vulnerability,Phishing,APT-28,Email,Russia,4
+phishing email with malicious link,Ransomware,Unknown,Web,USA,1
+phishing email with malicious link,DDoS,Unknown,Web,Global,5
+phishing email with malicious link,Ransomware,APT-28,Network,Germany,1
+ransomware attack through network vulnerability,Phishing,Unknown,Network,Germany,5
+ransomware attack through network vulnerability,Malware,APT-28,Email,Russia,1
+malware detected in email attachment,Ransomware,Lazarus Group,Web,Russia,2
+phishing scam targeting corporate accounts,Phishing,APT-28,Network,Global,3
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,USA,3
+malware detected in email attachment,DDoS,APT-28,Network,Germany,4
+malware detected in email attachment,Ransomware,Anonymous,Network,Global,2
+phishing email with malicious link,Ransomware,Anonymous,Network,North Korea,3
+malware detected in email attachment,Phishing,Lazarus Group,Network,North Korea,4
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Email,Global,2
+distributed denial of service attack on public website,Phishing,Anonymous,Web,Germany,3
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Global,1
+malware detected in email attachment,DDoS,APT-28,Network,Germany,5
+phishing scam targeting corporate accounts,Malware,APT-28,Web,Russia,2
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Global,4
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Germany,2
+ransomware attack through network vulnerability,Phishing,APT-28,Network,Global,4
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Global,2
+ransomware attack through network vulnerability,Malware,Unknown,Web,Germany,4
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Germany,3
+distributed denial of service attack on public website,DDoS,APT-28,Network,USA,1
+phishing email with malicious link,DDoS,APT-28,Email,Global,3
+ransomware attack through network vulnerability,Phishing,Unknown,Web,North Korea,1
+distributed denial of service attack on public website,Phishing,Unknown,Email,Global,3
+phishing email with malicious link,Malware,Anonymous,Web,Global,3
+ransomware attack through network vulnerability,Malware,Lazarus Group,Email,Germany,2
+distributed denial of service attack on public website,Ransomware,Anonymous,Email,Global,5
+distributed denial of service attack on public website,Malware,APT-28,Email,Global,4
+distributed denial of service attack on public website,DDoS,Anonymous,Network,North Korea,4
+malware detected in email attachment,DDoS,Anonymous,Email,Germany,4
+phishing scam targeting corporate accounts,Phishing,Anonymous,Email,Global,1
+phishing email with malicious link,Malware,Anonymous,Email,Russia,4
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Web,USA,4
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Email,North Korea,2
+phishing scam targeting corporate accounts,DDoS,Unknown,Web,Global,3
+distributed denial of service attack on public website,Ransomware,APT-28,Email,Russia,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,Global,5
+malware detected in email attachment,DDoS,Unknown,Network,Global,4
+ransomware attack through network vulnerability,DDoS,Unknown,Web,Germany,1
+distributed denial of service attack on public website,Ransomware,Unknown,Email,Germany,1
+phishing email with malicious link,DDoS,Lazarus Group,Web,Germany,1
+ransomware attack through network vulnerability,Phishing,Anonymous,Web,Russia,4
+ransomware attack through network vulnerability,Phishing,Anonymous,Network,Global,2
+ransomware attack through network vulnerability,Ransomware,APT-28,Network,USA,5
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,North Korea,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Germany,2
+distributed denial of service attack on public website,Ransomware,Unknown,Network,Germany,2
+phishing scam targeting corporate accounts,Malware,APT-28,Network,Global,4
+phishing scam targeting corporate accounts,Malware,Anonymous,Network,Global,4
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Network,Russia,2
+distributed denial of service attack on public website,Phishing,Anonymous,Email,Russia,2
+distributed denial of service attack on public website,DDoS,Unknown,Web,Germany,2
+malware detected in email attachment,Phishing,Lazarus Group,Network,Global,4
+malware detected in email attachment,DDoS,Unknown,Network,USA,2
+malware detected in email attachment,Phishing,Anonymous,Web,North Korea,1
+malware detected in email attachment,DDoS,Lazarus Group,Email,Global,4
+ransomware attack through network vulnerability,Phishing,APT-28,Web,Global,1
+ransomware attack through network vulnerability,Malware,APT-28,Web,Russia,3
+malware detected in email attachment,Ransomware,Lazarus Group,Network,North Korea,4
+malware detected in email attachment,Phishing,Lazarus Group,Web,Germany,3
+phishing email with malicious link,DDoS,Unknown,Web,Global,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Network,Germany,2
+phishing email with malicious link,Phishing,Unknown,Network,Global,5
+phishing email with malicious link,Phishing,Anonymous,Network,Germany,2
+phishing scam targeting corporate accounts,Malware,Unknown,Network,North Korea,3
+distributed denial of service attack on public website,Phishing,Lazarus Group,Web,Russia,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,North Korea,4
+malware detected in email attachment,Phishing,Anonymous,Email,USA,2
+malware detected in email attachment,Ransomware,Lazarus Group,Email,Russia,5
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,North Korea,2
+ransomware attack through network vulnerability,Malware,APT-28,Email,USA,3
+malware detected in email attachment,Phishing,APT-28,Web,Global,3
+malware detected in email attachment,Malware,Anonymous,Email,Global,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,Germany,3
+phishing email with malicious link,Phishing,APT-28,Email,Russia,3
+malware detected in email attachment,DDoS,Unknown,Network,Global,5
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Network,Russia,4
+distributed denial of service attack on public website,Malware,APT-28,Network,Global,5
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Network,Germany,1
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,North Korea,5
+phishing scam targeting corporate accounts,DDoS,Anonymous,Web,Germany,2
+phishing email with malicious link,Malware,APT-28,Network,USA,4
+malware detected in email attachment,Phishing,Unknown,Email,Global,2
+ransomware attack through network vulnerability,Malware,Lazarus Group,Network,USA,1
+distributed denial of service attack on public website,DDoS,Unknown,Email,USA,4
+phishing email with malicious link,DDoS,Unknown,Email,Russia,3
+phishing email with malicious link,Malware,Lazarus Group,Email,Global,5
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Web,USA,2
+phishing email with malicious link,Ransomware,APT-28,Email,North Korea,1
+ransomware attack through network vulnerability,DDoS,APT-28,Email,USA,3
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,North Korea,5
+phishing email with malicious link,Phishing,APT-28,Web,Russia,3
+distributed denial of service attack on public website,Ransomware,APT-28,Email,USA,5
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,Germany,4
+distributed denial of service attack on public website,DDoS,Unknown,Network,Russia,3
+distributed denial of service attack on public website,Phishing,APT-28,Network,North Korea,3
+phishing scam targeting corporate accounts,Phishing,APT-28,Web,Russia,3
+malware detected in email attachment,Ransomware,Unknown,Web,USA,4
+phishing scam targeting corporate accounts,Ransomware,APT-28,Email,Global,1
+ransomware attack through network vulnerability,DDoS,Unknown,Web,Global,5
+ransomware attack through network vulnerability,Malware,Unknown,Email,North Korea,3
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Network,North Korea,4
+malware detected in email attachment,Phishing,Anonymous,Web,Global,1
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Email,North Korea,5
+ransomware attack through network vulnerability,Malware,Anonymous,Email,Russia,4
+malware detected in email attachment,Ransomware,Anonymous,Network,Germany,5
+ransomware attack through network vulnerability,Malware,Anonymous,Web,Germany,3
+malware detected in email attachment,Malware,APT-28,Network,Russia,1
+malware detected in email attachment,Malware,Lazarus Group,Email,Germany,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,USA,1
+phishing scam targeting corporate accounts,Malware,Unknown,Web,Russia,3
+phishing scam targeting corporate accounts,Malware,APT-28,Email,North Korea,1
+malware detected in email attachment,Malware,Lazarus Group,Web,Russia,1
+malware detected in email attachment,Phishing,Anonymous,Network,Global,2
+ransomware attack through network vulnerability,Malware,Unknown,Web,North Korea,1
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Web,Global,5
+phishing scam targeting corporate accounts,Malware,Lazarus Group,Email,North Korea,4
+ransomware attack through network vulnerability,Malware,APT-28,Email,Germany,2
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Web,Russia,4
+phishing email with malicious link,Malware,APT-28,Email,USA,4
+phishing scam targeting corporate accounts,Ransomware,Anonymous,Email,North Korea,3
+ransomware attack through network vulnerability,Malware,APT-28,Email,North Korea,3
+phishing email with malicious link,Ransomware,Unknown,Web,Global,2
+phishing scam targeting corporate accounts,Malware,APT-28,Email,Germany,3
+malware detected in email attachment,Malware,Unknown,Web,Global,3
+phishing email with malicious link,Phishing,APT-28,Email,Global,3
+malware detected in email attachment,Phishing,Lazarus Group,Network,Germany,4
+distributed denial of service attack on public website,Malware,Anonymous,Email,USA,2
+distributed denial of service attack on public website,Malware,Unknown,Email,Global,4
+distributed denial of service attack on public website,DDoS,APT-28,Web,Global,5
+distributed denial of service attack on public website,Ransomware,APT-28,Web,North Korea,4
+ransomware attack through network vulnerability,DDoS,APT-28,Email,Germany,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,Russia,1
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Email,USA,1
+ransomware attack through network vulnerability,Phishing,Unknown,Email,USA,5
+phishing scam targeting corporate accounts,Phishing,Unknown,Network,Germany,5
+ransomware attack through network vulnerability,Malware,Lazarus Group,Web,North Korea,4
+ransomware attack through network vulnerability,Phishing,Unknown,Email,North Korea,5
+distributed denial of service attack on public website,Malware,Anonymous,Web,Germany,2
+ransomware attack through network vulnerability,Malware,Anonymous,Web,North Korea,1
+malware detected in email attachment,Phishing,Lazarus Group,Network,USA,1
+distributed denial of service attack on public website,Phishing,Unknown,Network,USA,5
+phishing email with malicious link,Ransomware,APT-28,Web,Russia,3
+distributed denial of service attack on public website,DDoS,Anonymous,Email,Germany,3
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Web,Global,5
+malware detected in email attachment,Ransomware,Unknown,Email,Global,2
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Russia,3
+malware detected in email attachment,DDoS,APT-28,Network,Russia,5
+phishing email with malicious link,Malware,Anonymous,Email,North Korea,2
+phishing email with malicious link,Phishing,Lazarus Group,Email,Russia,2
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,4
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,Global,2
+distributed denial of service attack on public website,Ransomware,APT-28,Email,North Korea,3
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Email,Russia,3
+malware detected in email attachment,Malware,APT-28,Network,Russia,5
+phishing scam targeting corporate accounts,Ransomware,APT-28,Web,North Korea,5
+malware detected in email attachment,Ransomware,APT-28,Network,Germany,2
+phishing scam targeting corporate accounts,DDoS,Anonymous,Network,North Korea,1
+phishing scam targeting corporate accounts,Phishing,Anonymous,Email,Global,4
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Email,Germany,1
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Web,USA,2
+ransomware attack through network vulnerability,Malware,Anonymous,Email,North Korea,2
+phishing scam targeting corporate accounts,Phishing,Unknown,Email,Global,1
+malware detected in email attachment,Ransomware,Anonymous,Network,Germany,4
+distributed denial of service attack on public website,Phishing,APT-28,Email,North Korea,1
+phishing email with malicious link,Ransomware,Anonymous,Web,Russia,5
+ransomware attack through network vulnerability,Malware,APT-28,Network,North Korea,3
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,USA,5
+phishing email with malicious link,Phishing,Unknown,Network,North Korea,3
+ransomware attack through network vulnerability,DDoS,Lazarus Group,Email,Germany,2
+distributed denial of service attack on public website,Phishing,APT-28,Network,Germany,4
+malware detected in email attachment,Ransomware,APT-28,Network,North Korea,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Email,Germany,4
+distributed denial of service attack on public website,Phishing,Unknown,Email,Russia,1
+ransomware attack through network vulnerability,Ransomware,Anonymous,Web,North Korea,5
+phishing scam targeting corporate accounts,DDoS,Lazarus Group,Web,Russia,5
+phishing email with malicious link,DDoS,Lazarus Group,Email,Russia,1
+malware detected in email attachment,Phishing,Anonymous,Email,Global,4
+ransomware attack through network vulnerability,Phishing,Lazarus Group,Email,North Korea,1
+malware detected in email attachment,Phishing,Unknown,Network,Germany,2
+phishing scam targeting corporate accounts,Ransomware,Lazarus Group,Network,Russia,5
+distributed denial of service attack on public website,Phishing,APT-28,Network,Global,2
+malware detected in email attachment,DDoS,Anonymous,Email,North Korea,5
+phishing email with malicious link,DDoS,Unknown,Web,North Korea,5
+ransomware attack through network vulnerability,Phishing,Anonymous,Email,USA,3
+phishing email with malicious link,Phishing,Unknown,Network,USA,2
+malware detected in email attachment,Malware,APT-28,Network,Russia,2
+distributed denial of service attack on public website,DDoS,Anonymous,Email,USA,3
+distributed denial of service attack on public website,Ransomware,Lazarus Group,Email,Russia,4
+phishing email with malicious link,Malware,Unknown,Network,Germany,2
+phishing scam targeting corporate accounts,Phishing,Anonymous,Network,Russia,1
+phishing scam targeting corporate accounts,Phishing,Lazarus Group,Network,USA,3
+distributed denial of service attack on public website,DDoS,Anonymous,Email,Germany,2
+phishing email with malicious link,Phishing,Anonymous,Network,USA,4
+phishing email with malicious link,Ransomware,Anonymous,Network,Russia,2
+phishing email with malicious link,DDoS,Unknown,Web,Global,5
+malware detected in email attachment,Phishing,Lazarus Group,Email,North Korea,1
+phishing scam targeting corporate accounts,DDoS,APT-28,Web,USA,3
+phishing scam targeting corporate accounts,Phishing,Unknown,Web,Russia,5
+malware detected in email attachment,Phishing,Unknown,Network,Germany,4
+ransomware attack through network vulnerability,Phishing,Unknown,Email,USA,5
+malware detected in email attachment,Ransomware,APT-28,Network,USA,5
+phishing email with malicious link,Ransomware,Lazarus Group,Email,North Korea,4
+malware detected in email attachment,DDoS,Lazarus Group,Web,Russia,5
+phishing email with malicious link,Phishing,Lazarus Group,Email,Global,3
+distributed denial of service attack on public website,Phishing,Anonymous,Network,Germany,2
+phishing email with malicious link,Ransomware,Anonymous,Network,Russia,5
+phishing scam targeting corporate accounts,Phishing,Anonymous,Network,Germany,3
+malware detected in email attachment,Ransomware,APT-28,Email,USA,2
+phishing email with malicious link,Phishing,Anonymous,Web,North Korea,2
+ransomware attack through network vulnerability,DDoS,APT-28,Web,North Korea,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Email,Global,3
+ransomware attack through network vulnerability,Phishing,Anonymous,Network,North Korea,5
+ransomware attack through network vulnerability,Malware,Anonymous,Web,USA,4
+ransomware attack through network vulnerability,Ransomware,Unknown,Network,Global,2
+distributed denial of service attack on public website,Phishing,APT-28,Email,Russia,5
+distributed denial of service attack on public website,Phishing,Lazarus Group,Network,North Korea,2
+distributed denial of service attack on public website,Malware,Unknown,Web,Global,3
+distributed denial of service attack on public website,Malware,Unknown,Web,USA,1
+ransomware attack through network vulnerability,Ransomware,Lazarus Group,Network,Germany,5
+phishing scam targeting corporate accounts,Malware,Unknown,Email,Germany,5
+phishing scam targeting corporate accounts,DDoS,APT-28,Network,USA,2
+distributed denial of service attack on public website,Malware,APT-28,Email,USA,3
+malware detected in email attachment,DDoS,Anonymous,Network,Germany,4
+phishing email with malicious link,Ransomware,Unknown,Web,Global,3
+malware detected in email attachment,Ransomware,Anonymous,Email,Germany,5
+malware detected in email attachment,Ransomware,Unknown,Email,USA,4
+malware detected in email attachment,Ransomware,APT-28,Email,North Korea,3
+phishing scam targeting corporate accounts,Ransomware,APT-28,Web,Russia,1
+phishing email with malicious link,DDoS,APT-28,Network,North Korea,2
