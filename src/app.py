@@ -1083,6 +1083,29 @@ def main():
 
             for m in messages:
                 st.write(m)
+                st.markdown("---")
+        st.markdown("### Dataset Previews")
+
+        preprocessed_path = os.path.join(
+            os.path.dirname(__file__), "..", "data", "processed", "ir_preprocessed_dataset.csv"
+        )
+        raw_path = os.path.join(
+            os.path.dirname(__file__), "..", "data", "raw", "Cybersecurity_Dataset.csv"
+        )
+
+        if st.button("Show Preprocessed Dataset"):
+            try:
+                preprocessed_df = pd.read_csv(preprocessed_path)
+                st.dataframe(preprocessed_df)
+            except FileNotFoundError:
+                st.error("File not found")
+
+        if st.button("Show Raw Cybersecurity Dataset"):
+            try:
+                raw_df = pd.read_csv(raw_path)
+                st.dataframe(raw_df)
+            except FileNotFoundError:
+                st.error("File not found")
 
 
 if __name__ == "__main__":
