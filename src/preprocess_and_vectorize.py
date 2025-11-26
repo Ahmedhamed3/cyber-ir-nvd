@@ -9,12 +9,18 @@ import joblib  # to save models/vectorizers
 # ---------- PATHS ----------
 # This should point to your FINAL dataset that already has `clean_text`.
 # Put your new CSV there and name it exactly like this:
-RAW_CSV = os.path.join("..", "data", "processed", "ir_preprocessed_dataset.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))
+DATA_PROCESSED_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 
-BOW_PATH = os.path.join("..", "data", "processed", "bow_matrix.npz")
-TFIDF_PATH = os.path.join("..", "data", "processed", "tfidf_matrix.npz")
-BOW_VECTORIZER_PATH = os.path.join("..", "models", "bow_vectorizer.pkl")
-TFIDF_VECTORIZER_PATH = os.path.join("..", "models", "tfidf_vectorizer.pkl")
+
+RAW_CSV = os.path.join(DATA_PROCESSED_DIR, "ir_preprocessed_dataset.csv")
+
+BOW_PATH = os.path.join(DATA_PROCESSED_DIR, "bow_matrix.npz")
+TFIDF_PATH = os.path.join(DATA_PROCESSED_DIR, "tfidf_matrix.npz")
+BOW_VECTORIZER_PATH = os.path.join(MODELS_DIR, "bow_vectorizer.pkl")
+TFIDF_VECTORIZER_PATH = os.path.join(MODELS_DIR, "tfidf_vectorizer.pkl")
 # ----------------------------
 
 

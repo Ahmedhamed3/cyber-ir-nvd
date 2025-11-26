@@ -32,8 +32,10 @@ class SearchEngine:
 
     def __init__(self):
         # --- Paths (relative to src/) ---
-        base_data = os.path.join("..", "data", "processed")
-        base_models = os.path.join("..", "models")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.abspath(os.path.join(base_dir, ".."))
+        base_data = os.path.join(project_root, "data", "processed")
+        base_models = os.path.join(project_root, "models")
 
         csv_path = os.path.join(base_data, "ir_preprocessed_dataset.csv")
         tfidf_path = os.path.join(base_data, "tfidf_matrix.npz")
@@ -45,6 +47,8 @@ class SearchEngine:
 
         if "clean_text" not in self.df.columns:
             raise ValueError("Expected a 'clean_text' column in ir_preprocessed_dataset.csv")
+        
+        self.clean_text_series = self.df["clean_text"].astype(str).str.lower()
 
         # Load TF-IDF matrix and vectorizer (still loaded; useful for similarity, etc.)
         print(f"[+] Loading TF-IDF matrix from: {tfidf_path}")
@@ -55,14 +59,12 @@ class SearchEngine:
 
         # Prepare BM25 corpus (list of tokens per document)
         print("[+] Preparing BM25 corpus...")
-        self.tokenized_docs = [doc.split() for doc in self.df["clean_text"].astype(str)]
+        self.tokenized_docs = [doc.split() for doc in self.clean_text_series]
         self.bm25 = BM25Okapi(self.tokenized_docs)
         print("[+] BM25 index built.")
 
         # Precompute token sets for overlap scoring
-        self.doc_token_sets = [
-            set(str(doc).split()) for doc in self.df["clean_text"].astype(str)
-        ]
+        self.doc_token_sets = [set(doc.split()) for doc in self.clean_text_series]
 
         # Build preprocessing tools for queries (same style as corpus)
         self._build_query_preprocessor()
