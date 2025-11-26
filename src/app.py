@@ -3,6 +3,7 @@ import re
 
 import numpy as np
 import pandas as pd
+import altair as alt
 import streamlit as st
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -841,23 +842,107 @@ def main():
 
     # ===================== TAB 2: DATASET ANALYTICS =====================
     with tab_dataset:
-        st.subheader(f"Dataset Analytics (All {len(df)} Threat Descriptions)")
+        st.subheader("Dataset Overview")
+        st.write("Analytics and key insights computed over the entire dataset.")
 
-        col_a, col_b = st.columns(2)
+        total_docs = len(df)
 
-        with col_a:
-            st.write("### Threat Categories")
-            st.bar_chart(df["category"].value_counts())
+        kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 
-            st.write("### Attack Vectors")
-            st.bar_chart(df["vector"].value_counts())
+        with kpi1:
+            st.markdown("**Total documents**")
+            st.markdown(
+                f"<h3 style='margin-top: -5px'>{total_docs}</h3>",
+                unsafe_allow_html=True,
+            )
 
-        with col_b:
-            st.write("### Threat Actors")
-            st.bar_chart(df["actor"].value_counts().head(10))
+        with kpi2:
+            cyber_docs = df["category"].isin(CYBER_CATEGORIES).sum()
+            st.markdown("**Cybersecurity docs**")
+            st.markdown(
+                f"<h3 style='margin-top: -5px'>{cyber_docs}</h3>",
+                unsafe_allow_html=True,
+            )
 
-            st.write("### Severity Distribution")
-            st.bar_chart(df["severity"].value_counts().sort_index())
+        with kpi3:
+            sports_docs = df["category"].isin(SPORTS_CATEGORIES).sum()
+            st.markdown("**Sports docs**")
+            st.markdown(
+                f"<h3 style='margin-top: -5px'>{sports_docs}</h3>",
+                unsafe_allow_html=True,
+            )
+
+        with kpi4:
+            food_docs = df["category"].isin(FOOD_CATEGORIES).sum()
+            st.markdown("**Food & Nutrition docs**")
+            st.markdown(
+                f"<h3 style='margin-top: -5px'>{food_docs}</h3>",
+                unsafe_allow_html=True,
+            )
+
+        def map_topic_group(cat: str) -> str:
+            if cat in CYBER_CATEGORIES:
+                return "Cybersecurity"
+            if cat in SPORTS_CATEGORIES:
+                return "Sports"
+            if cat in FOOD_CATEGORIES:
+                return "Food & Nutrition"
+            return "Other"
+
+        df["topic_group"] = df["category"].apply(map_topic_group)
+
+        topic_counts = df["topic_group"].value_counts()
+
+        st.markdown("### Topic Group Distribution")
+
+        if topic_counts.empty:
+            st.info("No data available to plot topic distribution.")
+        else:
+            pie_df = topic_counts.reset_index().rename(
+                columns={"index": "Topic Group", "topic_group": "Count"}
+            )
+            pie_df["percent"] = pie_df["Count"] / total_docs if total_docs else 0
+
+            chart = (
+                alt.Chart(pie_df)
+                .mark_arc(innerRadius=60)
+                .encode(
+                    theta=alt.Theta("Count:Q"),
+                    color=alt.Color("Topic Group:N"),
+                    tooltip=[
+                        "Topic Group:N",
+                        "Count:Q",
+                        alt.Tooltip("percent:Q", format=".1%"),
+                    ],
+                )
+            )
+
+            st.altair_chart(chart, use_container_width=True)
+
+        st.markdown("#### Category Breakdown")
+
+        breakdown_rows = []
+        if total_docs > 0:
+            category_counts = df["category"].dropna().value_counts()
+            for category_value, count in category_counts.items():
+                topic_group = map_topic_group(category_value)
+                percentage = round((count / total_docs) * 100, 1)
+                breakdown_rows.append(
+                    {
+                        "Topic Group": topic_group,
+                        "Category": category_value,
+                        "Count": count,
+                        "Percentage": percentage,
+                    }
+                )
+
+        breakdown_df = pd.DataFrame(
+            breakdown_rows, columns=["Topic Group", "Category", "Count", "Percentage"]
+        )
+        if not breakdown_df.empty:
+            breakdown_df = breakdown_df.sort_values(by="Count", ascending=False)
+
+            st.dataframe(breakdown_df, use_container_width=True)
 
     # ===================== TAB 3: MODEL DIAGNOSTICS & DEBUGGER =====================
     with tab_diag:
