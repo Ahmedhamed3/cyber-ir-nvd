@@ -336,7 +336,7 @@ def main():
 
     # ===================== TAB 1: SEARCH + DYNAMIC EVAL =====================
     with tab_search:
-        st.subheader("Search Threat Descriptions")
+        st.subheader("Please enter your query ")
 
         col_left, col_right = st.columns([2, 1])
 
