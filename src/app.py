@@ -635,38 +635,174 @@ def main():
                     except Exception as e:
                         st.error(f"Error during dynamic evaluation: {e}")
 
-# ========== Analytics for current results ==========
-        if has_valid_results and results is not None and not results.empty:
+# ========== Result insights for current results ==========
+        if has_valid_results and results is not None:
             st.markdown("---")
-            st.subheader("📊 Analytics on Current Results")
+            st.subheader("🧭 Result Insights")
 
-            c1, c2, c3, c4 = st.columns(4)
+            # Guard clause: show message when no rows are available
+            if results.empty:
+                st.info(
+                    "No insights to display because there are no matching results."
+                )
+            else:
+                # Define topic groups for dynamic detection
+                cyber_categories = ["Malware", "Phishing", "Ransomware", "DDoS"]
+                sports_categories = [
+                    "Football",
+                    "Basketball",
+                    "Tennis",
+                    "Athletics",
+                    "Gymnastics",
+                    "Cycling",
+                    "Esports",
+                    "Swimming",
+                    "Handball",
+                    "Volleyball",
+                ]
+                food_categories = [
+                    "Vegetable",
+                    "Fruit",
+                    "Grain",
+                    "Protein",
+                    "Dairy",
+                    "Nut",
+                    "Legume",
+                ]
 
-            with c1:
-                st.write("Categories")
-                st.bar_chart(results["category"].value_counts())
+                total_results = len(results)
 
-            with c2:
-                st.write("Attack Vectors")
-                st.bar_chart(results["vector"].value_counts())
+                # KPI cards for quick overview
+                kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 
-            with c3:
-                st.write("Severity")
-                st.bar_chart(results["severity"].value_counts().sort_index())
+                with kpi1:
+                    st.markdown("**Total Results**")
+                    st.markdown(f"<h3 style='margin-top: -5px'>{total_results}</h3>", unsafe_allow_html=True)
 
-            with c4:
-                st.write("Top Actors")
-                st.bar_chart(results["actor"].value_counts().head(10))
+                with kpi2:
+                    cyber_count = results["category"].isin(cyber_categories).sum()
+                    st.markdown("**Cybersecurity Docs**")
+                    st.markdown(
+                        f"<h3 style='margin-top: -5px'>{cyber_count}</h3>",
+                        unsafe_allow_html=True,
+                    )
 
-            # Extra BM25 debug chart if BM25 is selected
-            if model == "BM25" and "bm25_raw" in results.columns:
-                st.markdown("---")
-                st.subheader("🧪 BM25 Debug: Raw Score Distribution (Current Results)")
-                bm25_debug_df = results[["clean_text", "bm25_raw"]].copy()
-                bm25_debug_df = bm25_debug_df.set_index(
-                    bm25_debug_df["clean_text"].str.slice(0, 40) + "..."
-                )[["bm25_raw"]]
-                st.bar_chart(bm25_debug_df)
+                with kpi3:
+                    sports_count = results["category"].isin(sports_categories).sum()
+                    st.markdown("**Sports Docs**")
+                    st.markdown(
+                        f"<h3 style='margin-top: -5px'>{sports_count}</h3>",
+                        unsafe_allow_html=True,
+                    )
+
+                with kpi4:
+                    food_count = results["category"].isin(food_categories).sum()
+                    st.markdown("**Food & Nutrition Docs**")
+                    st.markdown(
+                        f"<h3 style='margin-top: -5px'>{food_count}</h3>",
+                        unsafe_allow_html=True,
+                    )
+
+                # Topic breakdown table
+                st.markdown("### Topic Breakdown")
+
+                def map_topic_group(cat: str) -> str:
+                    if cat in cyber_categories:
+                        return "Cybersecurity"
+                    if cat in sports_categories:
+                        return "Sports"
+                    if cat in food_categories:
+                        return "Food & Nutrition"
+                    return "Other"
+
+                category_counts = results["category"].fillna("Unknown").value_counts()
+                breakdown_rows = []
+                for category_value, count in category_counts.items():
+                    topic_group = map_topic_group(category_value)
+                    percentage = round((count / total_results) * 100, 1)
+                    breakdown_rows.append(
+                        {
+                            "Topic Group": topic_group,
+                            "Category": category_value,
+                            "Count": count,
+                            "Percentage": percentage,
+                        }
+                    )
+
+                breakdown_df = pd.DataFrame(breakdown_rows)
+                breakdown_df = breakdown_df.sort_values(by="Count", ascending=False)
+
+                st.dataframe(breakdown_df, use_container_width=True)
+
+                # Key Entities area (tables only, topic-aware)
+                st.markdown("### Key Entities")
+                col_left, col_right = st.columns(2)
+
+                with col_left:
+                    st.markdown("#### Cybersecurity Entities")
+                    if cyber_count == 0:
+                        st.info("No cybersecurity documents in the current results.")
+                    else:
+                        cyber_df = results[results["category"].isin(cyber_categories)]
+
+                        # Top actors
+                        actors_series = cyber_df["actor"].dropna().astype(str).str.strip()
+                        actors_series = actors_series[actors_series != ""]
+                        actor_counts = actors_series.value_counts().head(5)
+                        if not actor_counts.empty:
+                            st.write("Top Actors")
+                            st.table(actor_counts.reset_index().rename(columns={"index": "Actor", "actor": "Count"}))
+                        else:
+                            st.info("No actor information available.")
+
+                        # Top attack vectors
+                        vector_series = cyber_df["vector"].dropna().astype(str).str.strip()
+                        vector_series = vector_series[vector_series != ""]
+                        vector_counts = vector_series.value_counts().head(5)
+                        if not vector_counts.empty:
+                            st.write("Top Attack Vectors")
+                            st.table(
+                                vector_counts.reset_index().rename(
+                                    columns={"index": "Vector", "vector": "Count"}
+                                )
+                            )
+                        else:
+                            st.info("No attack vector information available.")
+
+                with col_right:
+                    st.markdown("#### Sports Entities")
+                    if sports_count == 0:
+                        st.info("No sports documents in the current results.")
+                    else:
+                        sports_df = results[results["category"].isin(sports_categories)]
+
+                        # Top teams/players
+                        team_series = sports_df["team_or_player"].dropna().astype(str).str.strip()
+                        team_series = team_series[team_series != ""]
+                        team_counts = team_series.value_counts().head(5)
+                        if not team_counts.empty:
+                            st.write("Top Teams / Players")
+                            st.table(
+                                team_counts.reset_index().rename(
+                                    columns={"index": "Team/Player", "team_or_player": "Count"}
+                                )
+                            )
+                        else:
+                            st.info("No team/player information available.")
+
+                        # Top event types
+                        event_series = sports_df["event_type"].dropna().astype(str).str.strip()
+                        event_series = event_series[event_series != ""]
+                        event_counts = event_series.value_counts().head(5)
+                        if not event_counts.empty:
+                            st.write("Top Event Types")
+                            st.table(
+                                event_counts.reset_index().rename(
+                                    columns={"index": "Event Type", "event_type": "Count"}
+                                )
+                            )
+                        else:
+                            st.info("No event type information available.")
 
     # ===================== TAB 2: DATASET ANALYTICS =====================
     with tab_dataset:
