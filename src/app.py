@@ -8,8 +8,12 @@ import streamlit as st
 from wordcloud import WordCloud
 from collections import Counter
 from sklearn.metrics.pairwise import cosine_similarity
+from nltk.corpus import stopwords
+import nltk
 
 from search_engine import SearchEngine
+
+nltk.download("stopwords")
 
 CYBER_CATEGORIES = ["Malware", "Phishing", "Ransomware", "DDoS"]
 SPORTS_CATEGORIES = [
@@ -26,6 +30,7 @@ SPORTS_CATEGORIES = [
 ]
 FOOD_CATEGORIES = ["Vegetable", "Fruit", "Grain", "Protein", "Dairy", "Nut", "Legume"]
 
+stop_words = set(stopwords.words("english"))
 
 
 # -------------------------------------------------------------------
@@ -953,7 +958,11 @@ def main():
                 st.info("No data available to compute word frequency.")
             else:
                 all_text = " ".join(clean_series)
-                words = re.findall(r"\b\w+\b", all_text.lower())
+                words = [
+                    w.lower()
+                    for w in all_text.split()
+                    if w.lower() not in stop_words and w.isalpha() and len(w) > 2
+                ]
                 if not words:
                     st.info("No data available to compute word frequency.")
                 else:
