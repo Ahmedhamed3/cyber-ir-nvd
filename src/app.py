@@ -6,6 +6,7 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 from wordcloud import WordCloud
+from collections import Counter
 from sklearn.metrics.pairwise import cosine_similarity
 
 from search_engine import SearchEngine
@@ -944,6 +945,38 @@ def main():
                 st.image(wc.to_array(), use_column_width=True)
             else:
                 st.info("No text available to generate word cloud.")
+
+                st.subheader("Word Frequency Chart (Top 20 Words)")
+        if st.button("Show Word Frequency"):
+            clean_series = df["clean_text"].dropna().astype(str)
+            if clean_series.empty:
+                st.info("No data available to compute word frequency.")
+            else:
+                all_text = " ".join(clean_series)
+                words = re.findall(r"\b\w+\b", all_text.lower())
+                if not words:
+                    st.info("No data available to compute word frequency.")
+                else:
+                    freq = Counter(words)
+                    top_words = freq.most_common(20)
+
+                    if not top_words:
+                        st.info("No frequent words found in the dataset.")
+                    else:
+                        freq_df = pd.DataFrame(top_words, columns=["Word", "Count"])
+
+                        chart = (
+                            alt.Chart(freq_df)
+                            .mark_bar()
+                            .encode(
+                                x="Count:Q",
+                                y=alt.Y("Word:N", sort="-x"),
+                                tooltip=["Word", "Count"],
+                                color=alt.value("#4C78A8"),
+                            )
+                        )
+
+                        st.altair_chart(chart, use_container_width=True)
 
         st.markdown("#### Category Breakdown")
 
