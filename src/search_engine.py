@@ -178,15 +178,19 @@ class SearchEngine:
 
         scores = np.array(scores, dtype=float)
 
-        # Rank documents by this overlap score
-        top_idx = np.argsort(scores)[::-1]  # descending
-        df_results = self.df.iloc[top_idx].copy()
-        df_results["score"] = scores[top_idx]
-
-        # Apply filters
+         # Build DataFrame with scores, apply filters, then drop zero/near-zero results
+        df_results = self.df.copy()
+        df_results["score"] = scores
         df_results = self._apply_filters(df_results, filters)
 
-        # Optional tie-break: severity if available
+       # Remove documents with zero (or negligible) score before ranking/limiting
+        epsilon = 1e-8
+        df_results = df_results[df_results["score"] > epsilon]
+
+        if df_results.empty:
+            return df_results
+
+        # Rank remaining documents and then cap at top_k
         if "severity" in df_results.columns:
             df_results = df_results.sort_values(
                 by=["score", "severity"],
@@ -223,26 +227,21 @@ class SearchEngine:
         # Raw BM25 scores for all docs
         scores = np.array(self.bm25.get_scores(tokens), dtype=float)
 
-        # Sort by raw BM25 (even if all zeros)
-        top_idx = np.argsort(scores)[::-1]
-        df_results = self.df.iloc[top_idx].copy()
-        df_results["bm25_raw"] = scores[top_idx]
-
-        # Apply filters
+        # Build DataFrame with raw scores, apply filters, then drop zero/near-zero results
+        df_results = self.df.copy()
+        df_results["bm25_raw"] = scores
         df_results = self._apply_filters(df_results, filters)
+        epsilon = 1e-8
+        df_results = df_results[df_results["bm25_raw"] > epsilon]
 
         if df_results.empty:
-            return df_results.head(top_k)
+            return df_results
 
-        # Normalize bm25_raw to [0, 1] for nice display
+         # Normalize bm25_raw to [0, 1] for display (after filtering so max>0)
         max_raw = df_results["bm25_raw"].max()
-        if max_raw > 0:
-            df_results["score"] = df_results["bm25_raw"] / max_raw
-        else:
-            # all 0 → just leave score 0; ranking is arbitrary here
-            df_results["score"] = 0.0
+        df_results["score"] = df_results["bm25_raw"] / max_raw
 
-        # Optional tie-break using severity
+        # Optional tie-break using severity, then cap at top_k
         if "severity" in df_results.columns:
             df_results = df_results.sort_values(
                 by=["score", "bm25_raw", "severity"],
