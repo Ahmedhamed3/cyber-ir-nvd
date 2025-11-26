@@ -8,6 +8,22 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from search_engine import SearchEngine
 
+CYBER_CATEGORIES = ["Malware", "Phishing", "Ransomware", "DDoS"]
+SPORTS_CATEGORIES = [
+    "Football",
+    "Basketball",
+    "Tennis",
+    "Athletics",
+    "Gymnastics",
+    "Cycling",
+    "Esports",
+    "Swimming",
+    "Handball",
+    "Volleyball",
+]
+FOOD_CATEGORIES = ["Vegetable", "Fruit", "Grain", "Protein", "Dairy", "Nut", "Legume"]
+
+
 
 # -------------------------------------------------------------------
 # Cache SearchEngine
@@ -198,6 +214,79 @@ def evaluate_query_score_based(
 
     return pd.DataFrame(rows)
 
+    
+def safe(val) -> str:
+    return "" if pd.isna(val) or val == "" else str(val)
+
+def format_result_header(row) -> str:
+    category = safe(row.get("category", "")) or "Unknown"
+    score = row.get("score", 0)
+    try:
+        score_str = f"{float(score):.4f}"
+    except (TypeError, ValueError):
+        score_str = "0.0000"
+
+    if category in CYBER_CATEGORIES:
+        topic_group = "Cybersecurity"
+    elif category in SPORTS_CATEGORIES:
+        topic_group = "Sports"
+    elif category in FOOD_CATEGORIES:
+        topic_group = "Food & Nutrition"
+    else:
+        topic_group = "Other"
+
+    header_parts = []
+
+    if topic_group == "Cybersecurity":
+        actor = safe(row.get("actor", ""))
+        vector = safe(row.get("vector", ""))
+        location = safe(row.get("location", ""))
+        severity_val = row.get("severity", "")
+        severity = "" if pd.isna(severity_val) or severity_val == "" else str(severity_val)
+
+        if actor:
+            header_parts.append(actor)
+
+        if vector or location:
+            vector_segment = vector
+            if location:
+                vector_segment = f"{vector_segment} – {location}" if vector_segment else location
+            if vector_segment:
+                header_parts.append(vector_segment)
+
+        if severity:
+            header_parts.append(f"Severity: {severity}")
+
+    elif topic_group == "Sports":
+        team_or_player = safe(row.get("team_or_player", ""))
+        event_type = safe(row.get("event_type", ""))
+        location = safe(row.get("location", ""))
+
+        if team_or_player:
+            header_parts.append(team_or_player)
+
+        if event_type or location:
+            event_segment = event_type
+            if location:
+                event_segment = f"{event_segment} – {location}" if event_segment else location
+            if event_segment:
+                header_parts.append(event_segment)
+
+    elif topic_group == "Food & Nutrition":
+        location = safe(row.get("location", ""))
+        if location:
+            header_parts.append(location)
+
+    else:
+        location = safe(row.get("location", ""))
+        if location:
+            header_parts.append(location)
+
+    header_parts.append(f"Score: {score_str}")
+
+    return f"[{category}] " + " | ".join(header_parts)
+
+
 
 # -------------------------------------------------------------------
 # Main Streamlit app
@@ -255,20 +344,7 @@ def main():
 
         # Filters
         st.markdown("### Optional Filters")
-        cyber_categories = ["Malware", "Phishing", "Ransomware", "DDoS"]
-        sports_categories = [
-            "Football",
-            "Basketball",
-            "Tennis",
-            "Athletics",
-            "Gymnastics",
-            "Cycling",
-            "Esports",
-            "Swimming",
-            "Handball",
-            "Volleyball",
-        ]
-        food_categories = ["Vegetable", "Fruit", "Grain", "Protein", "Dairy", "Nut", "Legume"]
+        
 
         topic_group = st.selectbox(
             "Topic Group",
@@ -280,15 +356,14 @@ def main():
             topic_df = df
             category_options = ["All"] + sorted(df["category"].dropna().unique().tolist())
         elif topic_group == "Cybersecurity":
-            topic_df = df[df["category"].isin(cyber_categories)]
-            category_options = ["All"] + cyber_categories
+            topic_df = df[df["category"].isin(CYBER_CATEGORIES)]
+            category_options = ["All"] + CYBER_CATEGORIES
         elif topic_group == "Sports":
-            topic_df = df[df["category"].isin(sports_categories)]
-            category_options = ["All"] + sports_categories
+            topic_df = df[df["category"].isin(SPORTS_CATEGORIES)]
+            category_options = ["All"] + SPORTS_CATEGORIES
         else:  # Food & Nutrition
-            topic_df = df[df["category"].isin(food_categories)]
-            category_options = ["All"] + food_categories
-
+            topic_df = df[df["category"].isin(FOOD_CATEGORIES)]
+            category_options = ["All"] + FOOD_CATEGORIES
         category_filter = "All"
         actor_filter = "All"
         vector_filter = "All"
@@ -447,7 +522,7 @@ def main():
 
 
                     if results is None or results.empty:
-                       st.warning("No documents matched your query and filters.")
+                        st.warning("No documents matched your query and filters.")
                     else:
                         if "score" in results.columns:
                             score_series = results["score"]
@@ -471,13 +546,9 @@ def main():
 
                                 highlighted = highlight_text(clean_text, matched_tokens)
 
-                                with st.expander(
-                                    f"[{row.get('category', 'N/A')}] "
-                                    f"{row.get('actor', 'Unknown')} | "
-                                    f"{row.get('vector', 'Unknown')} – {row.get('location', 'Unknown')} | "
-                                    f"Severity: {row.get('severity', 'N/A')} | "
-                                    f"Score: {row.get('score', 0):.4f}"
-                                ):
+                                header = format_result_header(row)
+
+                                with st.expander(header):
                                     # ===== Description with highlighting =====
                                     st.markdown("**Description (processed `clean_text`):**")
                                     st.markdown(highlighted, unsafe_allow_html=True)
@@ -508,21 +579,7 @@ def main():
                                             "- Matched tokens: query had no valid tokens after preprocessing."
                                         )
 
-                                    # Similar threats using TF-IDF similarity
-                                    if st.button("Show similar threats", key=f"sim_{idx}"):
-                                        try:
-                                            similar_docs = se.get_similar(idx, top_k=5)
-                                            st.write("Top similar threats:")
-                                            for j, srow in similar_docs.iterrows():
-                                                st.markdown(
-                                                    f"- [{srow.get('category', 'N/A')}] "
-                                                    f"{srow.get('actor', 'Unknown')} | "
-                                                    f"{srow.get('vector', 'Unknown')} – "
-                                                    f"{srow.get('location', 'Unknown')} | "
-                                                    f"Severity: {srow.get('severity', 'N/A')}"
-                                                )
-                                        except Exception as e:
-                                            st.error(f"Error getting similar documents: {e}")
+                                    
 
                 except Exception as e:
                     st.error(f"Error during search: {e}")
@@ -646,29 +703,7 @@ def main():
                     "No insights to display because there are no matching results."
                 )
             else:
-                # Define topic groups for dynamic detection
-                cyber_categories = ["Malware", "Phishing", "Ransomware", "DDoS"]
-                sports_categories = [
-                    "Football",
-                    "Basketball",
-                    "Tennis",
-                    "Athletics",
-                    "Gymnastics",
-                    "Cycling",
-                    "Esports",
-                    "Swimming",
-                    "Handball",
-                    "Volleyball",
-                ]
-                food_categories = [
-                    "Vegetable",
-                    "Fruit",
-                    "Grain",
-                    "Protein",
-                    "Dairy",
-                    "Nut",
-                    "Legume",
-                ]
+               
 
                 total_results = len(results)
 
@@ -680,7 +715,7 @@ def main():
                     st.markdown(f"<h3 style='margin-top: -5px'>{total_results}</h3>", unsafe_allow_html=True)
 
                 with kpi2:
-                    cyber_count = results["category"].isin(cyber_categories).sum()
+                    cyber_count = results["category"].isin(CYBER_CATEGORIES).sum()
                     st.markdown("**Cybersecurity Docs**")
                     st.markdown(
                         f"<h3 style='margin-top: -5px'>{cyber_count}</h3>",
@@ -688,7 +723,7 @@ def main():
                     )
 
                 with kpi3:
-                    sports_count = results["category"].isin(sports_categories).sum()
+                    sports_count = results["category"].isin(SPORTS_CATEGORIES).sum()
                     st.markdown("**Sports Docs**")
                     st.markdown(
                         f"<h3 style='margin-top: -5px'>{sports_count}</h3>",
@@ -696,7 +731,7 @@ def main():
                     )
 
                 with kpi4:
-                    food_count = results["category"].isin(food_categories).sum()
+                    food_count = results["category"].isin(FOOD_CATEGORIES).sum()
                     st.markdown("**Food & Nutrition Docs**")
                     st.markdown(
                         f"<h3 style='margin-top: -5px'>{food_count}</h3>",
@@ -707,11 +742,11 @@ def main():
                 st.markdown("### Topic Breakdown")
 
                 def map_topic_group(cat: str) -> str:
-                    if cat in cyber_categories:
+                    if cat in CYBER_CATEGORIES:
                         return "Cybersecurity"
-                    if cat in sports_categories:
+                    if cat in SPORTS_CATEGORIES:
                         return "Sports"
-                    if cat in food_categories:
+                    if cat in FOOD_CATEGORIES:
                         return "Food & Nutrition"
                     return "Other"
 
@@ -743,7 +778,7 @@ def main():
                     if cyber_count == 0:
                         st.info("No cybersecurity documents in the current results.")
                     else:
-                        cyber_df = results[results["category"].isin(cyber_categories)]
+                        cyber_df = results[results["category"].isin(CYBER_CATEGORIES)]
 
                         # Top actors
                         actors_series = cyber_df["actor"].dropna().astype(str).str.strip()
@@ -774,7 +809,7 @@ def main():
                     if sports_count == 0:
                         st.info("No sports documents in the current results.")
                     else:
-                        sports_df = results[results["category"].isin(sports_categories)]
+                        sports_df = results[results["category"].isin(SPORTS_CATEGORIES)]
 
                         # Top teams/players
                         team_series = sports_df["team_or_player"].dropna().astype(str).str.strip()
