@@ -298,7 +298,7 @@ def main():
         layout="wide",
     )
 
-    st.title("🔍 Cybersecurity Threat Information Retrieval System")
+    st.title("🔍 Information Retrieval System")
 
     st.markdown(
     """
@@ -881,6 +881,8 @@ def main():
             )
 
         def map_topic_group(cat: str) -> str:
+            if not cat:
+                return None
             if cat in CYBER_CATEGORIES:
                 return "Cybersecurity"
             if cat in SPORTS_CATEGORIES:
@@ -889,18 +891,23 @@ def main():
                 return "Food & Nutrition"
             return "Other"
 
-        df["topic_group"] = df["category"].apply(map_topic_group)
+        category_series = df["category"].astype(str).str.strip()
+        category_series = category_series.replace({"": pd.NA, "nan": pd.NA})
+        df["topic_group"] = category_series.apply(map_topic_group)
 
-        topic_counts = df["topic_group"].value_counts()
+        topic_counts = df["topic_group"].dropna().value_counts()
 
         st.markdown("### Topic Group Distribution")
 
         if topic_counts.empty:
             st.info("No data available to plot topic distribution.")
         else:
-            pie_df = topic_counts.reset_index().rename(
-                columns={"index": "Topic Group", "topic_group": "Count"}
+            pie_df = (
+                topic_counts.rename_axis("Topic Group")
+                .reset_index(name="Count")
+                .loc[:, ["Topic Group", "Count"]]
             )
+            pie_df = pie_df[pie_df["Topic Group"].notna()]
             pie_df["Count"] = pd.to_numeric(pie_df["Count"], errors="coerce").fillna(0)
 
             if total_docs > 0:
