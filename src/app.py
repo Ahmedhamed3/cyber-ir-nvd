@@ -775,7 +775,7 @@ def main():
                 breakdown_df = pd.DataFrame(breakdown_rows)
                 breakdown_df = breakdown_df.sort_values(by="Count", ascending=False)
 
-                st.dataframe(breakdown_df, use_container_width=True)
+                st.dataframe(breakdown_df, width="stretch")
 
                 # Key Entities area (tables only, topic-aware)
                 st.markdown("### Key Entities")
@@ -936,7 +936,7 @@ def main():
                 )
             )
 
-            st.altair_chart(chart, use_container_width=True)
+            st.altair_chart(chart, width="stretch")
 
             st.subheader("Word Cloud (Most Frequent Terms)")
         if df.empty:
@@ -985,8 +985,7 @@ def main():
                             )
                         )
 
-                        st.altair_chart(chart, use_container_width=True)
-
+                        st.altair_chart(chart, width="stretch")
         st.markdown("#### Category Breakdown")
 
         breakdown_rows = []
@@ -1010,7 +1009,7 @@ def main():
         if not breakdown_df.empty:
             breakdown_df = breakdown_df.sort_values(by="Count", ascending=False)
 
-            st.dataframe(breakdown_df, use_container_width=True)
+            st.dataframe(breakdown_df, width="stretch")
 
     # ===================== TAB 3: MODEL DIAGNOSTICS & DEBUGGER =====================
     with tab_diag:
