@@ -414,6 +414,7 @@ def main():
         search_btn = st.button("Search")
 
         results = None
+        has_valid_results = False
 
         if search_btn:
             if filtered_df.empty:
@@ -446,178 +447,196 @@ def main():
 
 
                     if results is None or results.empty:
-                        st.info("No results found for this query with the current filters.")
+                       st.warning("No documents matched your query and filters.")
                     else:
-                        st.success(f"Found {len(results)} results (showing up to {top_k}).")
+                        if "score" in results.columns:
+                            score_series = results["score"]
+                            if score_series.isna().all() or (score_series.fillna(0) == 0).all():
+                                st.warning("No documents matched your query and filters.")
+                                results = None
+                            else:
+                                has_valid_results = True
+                        else:
+                            has_valid_results = True
 
-                        for idx, row in results.iterrows():
-                            clean_text = str(row.get("clean_text", ""))
-                            doc_tokens = set(clean_text.lower().split())
-                            matched_tokens = doc_tokens & query_tokens
+                        if has_valid_results and results is not None:
+                            st.success(
+                                f"Found {len(results)} results (showing up to {top_k})."
+                            )
 
-                            highlighted = highlight_text(clean_text, matched_tokens)
+                            for idx, row in results.iterrows():
+                                clean_text = str(row.get("clean_text", ""))
+                                doc_tokens = set(clean_text.lower().split())
+                                matched_tokens = doc_tokens & query_tokens
 
-                            with st.expander(
-                                f"[{row.get('category', 'N/A')}] "
-                                f"{row.get('actor', 'Unknown')} | "
-                                f"{row.get('vector', 'Unknown')} – {row.get('location', 'Unknown')} | "
-                                f"Severity: {row.get('severity', 'N/A')} | "
-                                f"Score: {row.get('score', 0):.4f}"
-                            ):
-                                # ===== Description with highlighting =====
-                                st.markdown("**Description (processed `clean_text`):**")
-                                st.markdown(highlighted, unsafe_allow_html=True)
+                                highlighted = highlight_text(clean_text, matched_tokens)
 
-                                # ===== Explainability panel =====
-                                st.markdown("**Why is this document ranked here?**")
-                                st.write(f"- Retrieval model: `{model}`")
-                                st.write(f"- Score (normalized): `{row.get('score', 0):.4f}`")
+                                with st.expander(
+                                    f"[{row.get('category', 'N/A')}] "
+                                    f"{row.get('actor', 'Unknown')} | "
+                                    f"{row.get('vector', 'Unknown')} – {row.get('location', 'Unknown')} | "
+                                    f"Severity: {row.get('severity', 'N/A')} | "
+                                    f"Score: {row.get('score', 0):.4f}"
+                                ):
+                                    # ===== Description with highlighting =====
+                                    st.markdown("**Description (processed `clean_text`):**")
+                                    st.markdown(highlighted, unsafe_allow_html=True)
 
-                                if model == "BM25":
-                                    bm25_raw_val = row.get("bm25_raw", None)
-                                    if bm25_raw_val is not None:
-                                        st.write(f"- BM25 raw score: `{bm25_raw_val:.4f}`")
+                                    # ===== Explainability panel =====
+                                    st.markdown("**Why is this document ranked here?**")
+                                    st.write(f"- Retrieval model: `{model}`")
+                                    st.write(f"- Score (normalized): `{row.get('score', 0):.4f}`")
 
-                                if query_tokens:
-                                    st.write(
-                                        f"- Matched tokens: "
-                                        f"({len(matched_tokens)}/{len(query_tokens)}) "
-                                        + (
-                                            ", ".join(sorted(matched_tokens))
-                                            if matched_tokens
-                                            else "None"
-                                        )
-                                    )
-                                else:
-                                    st.write(
-                                        "- Matched tokens: query had no valid tokens after preprocessing."
-                                    )
+                                    if model == "BM25":
+                                        bm25_raw_val = row.get("bm25_raw", None)
+                                        if bm25_raw_val is not None:
+                                            st.write(f"- BM25 raw score: `{bm25_raw_val:.4f}`")
 
-                                # Similar threats using TF-IDF similarity
-                                if st.button("Show similar threats", key=f"sim_{idx}"):
-                                    try:
-                                        similar_docs = se.get_similar(idx, top_k=5)
-                                        st.write("Top similar threats:")
-                                        for j, srow in similar_docs.iterrows():
-                                            st.markdown(
-                                                f"- [{srow.get('category', 'N/A')}] "
-                                                f"{srow.get('actor', 'Unknown')} | "
-                                                f"{srow.get('vector', 'Unknown')} – "
-                                                f"{srow.get('location', 'Unknown')} | "
-                                                f"Severity: {srow.get('severity', 'N/A')}"
+                                    if query_tokens:
+                                        st.write(
+                                            f"- Matched tokens: "
+                                            f"({len(matched_tokens)}/{len(query_tokens)}) "
+                                            + (
+                                                ", ".join(sorted(matched_tokens))
+                                                if matched_tokens
+                                                else "None"
                                             )
-                                    except Exception as e:
-                                        st.error(f"Error getting similar documents: {e}")
+
+                                      )
+                                    else:
+                                        st.write(
+                                            "- Matched tokens: query had no valid tokens after preprocessing."
+                                        )
+
+                                    # Similar threats using TF-IDF similarity
+                                    if st.button("Show similar threats", key=f"sim_{idx}"):
+                                        try:
+                                            similar_docs = se.get_similar(idx, top_k=5)
+                                            st.write("Top similar threats:")
+                                            for j, srow in similar_docs.iterrows():
+                                                st.markdown(
+                                                    f"- [{srow.get('category', 'N/A')}] "
+                                                    f"{srow.get('actor', 'Unknown')} | "
+                                                    f"{srow.get('vector', 'Unknown')} – "
+                                                    f"{srow.get('location', 'Unknown')} | "
+                                                    f"Severity: {srow.get('severity', 'N/A')}"
+                                                )
+                                        except Exception as e:
+                                            st.error(f"Error getting similar documents: {e}")
 
                 except Exception as e:
                     st.error(f"Error during search: {e}")
 
         # ========== Dynamic Evaluation (Option B: score-based) ==========
-        st.markdown("---")
-        st.subheader("⚖️ Dynamic Evaluation for This Query (Score-based Relevance)")
+        if has_valid_results:
+            st.markdown("---")
+            st.subheader("⚖️ Dynamic Evaluation for This Query (Score-based Relevance)")
 
         col_eval1, col_eval2, col_eval3 = st.columns([2, 1, 1])
 
         with col_eval1:
-            st.write(
-                "Relevance is defined as: **documents whose normalized score ≥ threshold**.\n"
-                "For TF-IDF, scores are cosine similarities in [0, 1].\n"
-                "For BM25, scores are normalized by the maximum raw score."
-            )
+                st.write(
+                    "Relevance is defined as: **documents whose normalized score ≥ threshold**.\n"
+                    "For TF-IDF, scores are cosine similarities in [0, 1].\n"
+                    "For BM25, scores are normalized by the maximum raw score."
+                )
 
         with col_eval2:
-            k_eval = st.slider(
-                "k for evaluation (Precision@k, Recall@k, nDCG@k)",
-                5,
-                50,
-                10,
-                step=5,
-            )
+                k_eval = st.slider(
+                    "k for evaluation (Precision@k, Recall@k, nDCG@k)",
+                    5,
+                    50,
+                    10,
+                    step=5,
+                )
 
         with col_eval3:
-            relevance_threshold = st.slider(
-                "Score threshold for relevance",
-                0.0,
-                1.0,
-                0.2,
-                step=0.05,
-            )
+                relevance_threshold = st.slider(
+                    "Score threshold for relevance",
+                    0.0,
+                    1.0,
+                    0.2,
+                    step=0.05,
+                )
 
         decision_metric_ui = st.selectbox(
-            "Metric for recommendation",
-            ["nDCG", "AP", "precision@k", "recall@k"],
-            index=0,
-        )
+                "Metric for recommendation",
+                ["nDCG", "AP", "precision@k", "recall@k"],
+                index=0,
+            )
+
 
         if st.button("Evaluate this query"):
-            if not query.strip():
-                st.warning("Enter a query first.")
-            else:
-                try:
-                    metrics_df = evaluate_query_score_based(
-                        se, query, k=k_eval, threshold=relevance_threshold
-                    )
+                if not query.strip():
+                    st.warning("Enter a query first.")
+                else:
+                    try:
+                        metrics_df = evaluate_query_score_based(
+                            se, query, k=k_eval, threshold=relevance_threshold
+                         )
+                    
 
-                    st.write("Dynamic evaluation for this query (score-based relevance):")
-                    st.dataframe(
-                        metrics_df.style.format(
-                            {
-                                "precision@k": "{:.3f}",
-                                "recall@k": "{:.3f}",
-                                "AP": "{:.3f}",
-                                "nDCG": "{:.3f}",
-                            }
-                        )
-                    )
+                        st.write("Dynamic evaluation for this query (score-based relevance):")
+                        st.dataframe(
+                            metrics_df.style.format(
+                                {
+                                    "precision@k": "{:.3f}",
+                                    "recall@k": "{:.3f}",
+                                    "AP": "{:.3f}",
+                                    "nDCG": "{:.3f}",
+                                }
+                            )
+                        )    
+                    
 
-                    # ===== Recommendation based on selected metric =====
-                    decision_metric = decision_metric_ui
+                         # ===== Recommendation based on selected metric =====
+                        decision_metric = decision_metric_ui
 
-                    if decision_metric not in metrics_df.columns:
-                        st.error(
-                            f"Selected metric '{decision_metric}' not found in metrics table."
-                        )
-                    else:
-                        best_idx = metrics_df[decision_metric].idxmax()
-                        best_row = metrics_df.loc[best_idx]
-                        best_model = best_row["model"]
-                        best_score = float(best_row[decision_metric])
-
-                        other_rows = metrics_df[metrics_df["model"] != best_model]
-                        if not other_rows.empty:
-                            other_score = float(other_rows[decision_metric].iloc[0])
-                        else:
-                            other_score = best_score
-
-                        diff = abs(best_score - other_score)
-
-                        st.markdown("### Model Recommendation")
-
-                        if diff < 0.02:
-                            st.info(
-                                f"For this query, **TF-IDF** and **BM25** perform very similarly "
-                                f"based on `{decision_metric}` "
-                                f"({best_score:.3f} vs {other_score:.3f}). "
-                                f"You can use either model."
+                        if decision_metric not in metrics_df.columns:
+                            st.error(
+                                f"Selected metric '{decision_metric}' not found in metrics table."
                             )
                         else:
-                            st.success(
-                                f"For this query, **`{best_model}`** is recommended, "
-                                f"as it achieves a higher `{decision_metric}` "
-                                f"({best_score:.3f} vs {other_score:.3f})."
-                            )
+                            best_idx = metrics_df[decision_metric].idxmax()
+                            best_row = metrics_df.loc[best_idx]
+                            best_model = best_row["model"]
+                            best_score = float(best_row[decision_metric])
 
-                    st.markdown("### Metrics comparison (bar chart)")
-                    chart_df = metrics_df.set_index("model")[
-                        ["precision@k", "recall@k", "AP", "nDCG"]
-                    ]
-                    st.bar_chart(chart_df)
+                            other_rows = metrics_df[metrics_df["model"] != best_model]
+                            if not other_rows.empty:
+                                other_score = float(other_rows[decision_metric].iloc[0])
+                            else:
+                                other_score = best_score
 
-                except Exception as e:
-                    st.error(f"Error during dynamic evaluation: {e}")
+                            diff = abs(best_score - other_score)
 
-        # ========== Analytics for current results ==========
-        if results is not None and not results.empty:
+                            st.markdown("### Model Recommendation")
+
+                            if diff < 0.02:
+                                st.info(
+                                    f"For this query, **TF-IDF** and **BM25** perform very similarly "
+                                    f"based on `{decision_metric}` "
+                                    f"({best_score:.3f} vs {other_score:.3f}). "
+                                    f"You can use either model."
+                                )
+                            else:
+                                st.success(
+                                    f"For this query, **`{best_model}`** is recommended, "
+                                    f"as it achieves a higher `{decision_metric}` "
+                                    f"({best_score:.3f} vs {other_score:.3f})."
+                                )
+
+                        st.markdown("### Metrics comparison (bar chart)")
+                        chart_df = metrics_df.set_index("model")[
+                            ["precision@k", "recall@k", "AP", "nDCG"]
+                        ]
+                        st.bar_chart(chart_df)
+
+                    except Exception as e:
+                        st.error(f"Error during dynamic evaluation: {e}")
+
+# ========== Analytics for current results ==========
+        if has_valid_results and results is not None and not results.empty:
             st.markdown("---")
             st.subheader("📊 Analytics on Current Results")
 

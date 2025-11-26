@@ -1,6 +1,6 @@
 import os
 import re
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 
 import numpy as np
 import pandas as pd
@@ -258,6 +258,7 @@ class SearchEngine:
 
     # ------------------------------------------------------------------
     # Boolean search (simple AND model)
+    # Boolean search with AND / OR / NOT and parentheses
     # ------------------------------------------------------------------
     def search_boolean(
         self,
@@ -265,24 +266,127 @@ class SearchEngine:
         filters: Optional[Dict] = None,
     ) -> pd.DataFrame:
         """
-        Very simple Boolean AND model:
-        - Preprocess query → tokens
-        - Return docs whose clean_text contains ALL tokens.
-        - score = 1.0 for every matching document (documents that don't match are not returned).
+        Boolean model supporting AND / OR / NOT with optional parentheses.
+
+        Rules:
+        - Operators are AND, OR, NOT (case-insensitive).
+        - If no operator is specified between terms, AND is assumed.
+        - Terms are matched against `clean_text`.
+        - Matching documents receive score = 1.0.
         """
+
+        def _tokenize_boolean_query(raw_query: str) -> List[str]:
+            pattern = r"\(|\)|\bAND\b|\bOR\b|\bNOT\b|\w+"
+            raw_tokens = re.findall(pattern, raw_query, flags=re.IGNORECASE)
+
+            processed_tokens: List[str] = []
+            for tok in raw_tokens:
+                upper_tok = tok.upper()
+                if upper_tok in {"AND", "OR", "NOT", "(", ")"}:
+                    processed_tokens.append(upper_tok)
+                    continue
+
+                clean_tok = self._preprocess_query(tok).strip()
+                if not clean_tok:
+                    continue
+                # _preprocess_query may expand into multiple tokens (rare); keep each
+                processed_tokens.extend(clean_tok.split())
+
+            return processed_tokens
+
+        def _insert_implicit_and(tokens: List[str]) -> List[str]:
+            if not tokens:
+                return tokens
+
+            result: List[str] = []
+            for i, tok in enumerate(tokens):
+                if i > 0:
+                    prev = result[-1]
+                    if (
+                        (prev not in {"AND", "OR", "NOT", "("})
+                        or prev == ")"
+                    ):
+                        if tok in {"(", "NOT"} or tok not in {"AND", "OR", ")"}:
+                            result.append("AND")
+                result.append(tok)
+            return result
+
+        def _to_postfix(tokens: List[str]) -> List[str]:
+            precedence = {"NOT": 3, "AND": 2, "OR": 1}
+            output: List[str] = []
+            stack: List[str] = []
+
+            for tok in tokens:
+                if tok in {"AND", "OR", "NOT"}:
+                    if tok == "NOT":
+                        while stack and precedence.get(stack[-1], 0) > precedence[tok]:
+                            output.append(stack.pop())
+                    else:
+                        while stack and stack[-1] != "(" and precedence.get(stack[-1], 0) >= precedence[tok]:
+                            output.append(stack.pop())
+                    stack.append(tok)
+                elif tok == "(":
+                    stack.append(tok)
+                elif tok == ")":
+                    while stack and stack[-1] != "(":
+                        output.append(stack.pop())
+                    if not stack:
+                        raise ValueError("Mismatched parentheses in Boolean query.")
+                    stack.pop()  # Remove '('
+                else:
+                    output.append(tok)
+
+            while stack:
+                if stack[-1] in {"(", ")"}:
+                    raise ValueError("Mismatched parentheses in Boolean query.")
+                output.append(stack.pop())
+
+            return output
+
+        def _evaluate_postfix(postfix: List[str], doc_tokens: set[str]) -> bool:
+            stack: List[bool] = []
+            for tok in postfix:
+                if tok == "NOT":
+                    if not stack:
+                        raise ValueError("Invalid Boolean expression: NOT without operand.")
+                    operand = stack.pop()
+                    stack.append(not operand)
+                elif tok in {"AND", "OR"}:
+                    if len(stack) < 2:
+                        raise ValueError("Invalid Boolean expression: operator without operands.")
+                    b = stack.pop()
+                    a = stack.pop()
+                    stack.append(a and b if tok == "AND" else a or b)
+                else:
+                    stack.append(tok.lower() in doc_tokens)
+
+            if len(stack) != 1:
+                raise ValueError("Invalid Boolean expression: unresolved terms remain.")
+
+            return stack[0]
+
         if not query.strip():
             raise ValueError("Query is empty.")
 
-        clean_query = self._preprocess_query(query)
-        tokens = clean_query.split()
-        if not tokens:
+        tokens_raw = _tokenize_boolean_query(query)
+        if not tokens_raw:
             raise ValueError("Query became empty after preprocessing.")
 
-        mask = pd.Series(True, index=self.df.index)
-        for t in tokens:
-            mask &= self.df["clean_text"].str.contains(rf"\b{re.escape(t)}\b", regex=True)
+        tokens_with_and = _insert_implicit_and(tokens_raw)
+        postfix_expr = _to_postfix(tokens_with_and)
 
-        df_results = self.df[mask].copy()
+        matches = []
+        for idx, row in self.df.iterrows():
+            clean_text = str(row.get("clean_text", ""))
+            doc_tokens = set(clean_text.lower().split())
+
+            try:
+                if _evaluate_postfix(postfix_expr, doc_tokens):
+                    matches.append(idx)
+            except ValueError as e:
+                raise ValueError("Invalid Boolean query. Please use AND/OR/NOT and parentheses.") from e
+
+        df_results = self.df.loc[matches].copy()
 
         if df_results.empty:
             return df_results
@@ -291,7 +395,7 @@ class SearchEngine:
 
         df_results = self._apply_filters(df_results, filters)
 
-        # optional deterministic order
+       
         if "severity" in df_results.columns:
             df_results = df_results.sort_values(by="severity", ascending=False)
 
