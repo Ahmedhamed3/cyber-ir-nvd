@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+scikit-learn
+rank-bm25
+nltk
+wordcloud
+altair
+matplotlib
+python-dateutil

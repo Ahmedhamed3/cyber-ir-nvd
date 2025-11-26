@@ -301,7 +301,7 @@ def format_result_header(row) -> str:
 # -------------------------------------------------------------------
 def main():
     st.set_page_config(
-        page_title="Cyber Threat IR System",
+        page_title="IR System",
         layout="wide",
     )
 
