@@ -845,7 +845,7 @@ def main():
         st.subheader("Dataset Overview")
         st.write("Analytics and key insights computed over the entire dataset.")
 
-        total_docs = len(df)
+        total_docs = int(len(df))
 
         kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 
@@ -901,7 +901,12 @@ def main():
             pie_df = topic_counts.reset_index().rename(
                 columns={"index": "Topic Group", "topic_group": "Count"}
             )
-            pie_df["percent"] = pie_df["Count"] / total_docs if total_docs else 0
+            pie_df["Count"] = pd.to_numeric(pie_df["Count"], errors="coerce").fillna(0)
+
+            if total_docs > 0:
+                pie_df["percent"] = pie_df["Count"] / float(total_docs)
+            else:
+                pie_df["percent"] = 0.0
 
             chart = (
                 alt.Chart(pie_df)
