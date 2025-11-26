@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import altair as alt
 import streamlit as st
+from wordcloud import WordCloud
 from sklearn.metrics.pairwise import cosine_similarity
 
 from search_engine import SearchEngine
@@ -930,6 +931,19 @@ def main():
             )
 
             st.altair_chart(chart, use_container_width=True)
+
+            st.subheader("Word Cloud (Most Frequent Terms)")
+        if df.empty:
+            st.info("Dataset is empty; no text available to generate word cloud.")
+        elif st.button("Generate Word Cloud"):
+            all_text = " ".join(df["clean_text"].dropna().astype(str))
+            if all_text.strip():
+                wc = WordCloud(
+                    width=800, height=400, background_color="white"
+                ).generate(all_text)
+                st.image(wc.to_array(), use_column_width=True)
+            else:
+                st.info("No text available to generate word cloud.")
 
         st.markdown("#### Category Breakdown")
 
