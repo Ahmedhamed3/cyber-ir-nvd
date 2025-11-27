@@ -499,6 +499,8 @@ def main():
         results = None
         has_valid_results = False
 
+        tfidf_query_vec = None
+
         if search_btn:
             if filtered_df.empty:
                 st.info("No documents match the selected filters.")
@@ -509,6 +511,9 @@ def main():
                     # Preprocess query using the same logic as SearchEngine
                     query_clean = se._preprocess_query(query)
                     query_tokens = set(query_clean.split())
+
+                    if model == "TF-IDF (VSM)":
+                        tfidf_query_vec = se.tfidf_vectorizer.transform([query_clean])
 
                     search_pool = len(df)
 
@@ -586,6 +591,38 @@ def main():
                                         st.write(
                                             "- Matched tokens: query had no valid tokens after preprocessing."
                                         )
+
+                                    if (
+                                        model == "TF-IDF (VSM)" and tfidf_query_vec is not None
+                                    ):
+                                        doc_vec = se.X_tfidf[idx]
+                                        cos_sim = float(
+                                            cosine_similarity(tfidf_query_vec, doc_vec)[0, 0]
+                                        )
+                                        st.write(
+                                            f"- Cosine similarity: `{cos_sim:.4f}`"
+                                        )
+
+                                        vocab = se.tfidf_vectorizer.vocabulary_
+                                        tfidf_weights = []
+
+                                        for tok in sorted(matched_tokens):
+                                            col_idx = vocab.get(tok)
+                                            if col_idx is None:
+                                                continue
+
+                                            weight_val = float(doc_vec[0, col_idx])
+                                            tfidf_weights.append(
+                                                f"{tok}={weight_val:.4f}"
+                                            )
+
+                                        if tfidf_weights:
+                                            st.write(
+                                                "- TF-IDF weights: "
+                                                + ", ".join(tfidf_weights)
+                                            )
+                                        else:
+                                            st.write("- TF-IDF weights: None")                            
 
                                     
 
